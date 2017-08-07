@@ -40,7 +40,7 @@ li {
     height: 43px;
     vertical-align: middle;
     /*! clear: both; */
-    
+
     font-size: 13px!important;
 }
 /*Efeitos*/
@@ -65,13 +65,13 @@ li {
     cursor: pointer;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
-    
+
     filter: grayscale(100%);
 }
 #half-banners img:hover {
     -webkit-filter: grayscale(0%);
     /* Safari 6.0 - 9.0 */
-    
+
     filter: grayscale(0%);
 }
 .menu-user img {
@@ -105,19 +105,19 @@ li {
 }
 .menu-principal li {
     cursor: pointer;
-    color: #818181;
-    line-height: 30px;
+    color: #282828;
+    vertical-align: middle;
     text-align: center;
-    height: 30px;
-    border-radius: 10px;
-    background-color: #EBEBEB;
-    width: 120px;
+    background-color: #ffd000;
+    width: 154px;
     display: inline-table;
     vertical-align: middle;
+    text-transform: uppercase;
 }
 .menu-principal {
-    /*! width: 100%; */
-    
+    border-radius: 20px;
+    height: 35px;
+    background-color: #ffd000;
     margin: 0 auto;
 }
 .menu-user li a:before {
