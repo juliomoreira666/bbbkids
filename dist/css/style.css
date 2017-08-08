@@ -119,12 +119,13 @@ li {
 }
 
 .menu-principal li {
+  padding-right: 10px;
   cursor: pointer;
   color: #282828;
   vertical-align: middle;
   text-align: center;
   background-color: #ffd000;
-  width: 148px;
+  width: 158px;
   display: inline-table;
   vertical-align: middle;
   text-transform: uppercase;
