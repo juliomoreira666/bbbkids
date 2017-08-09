@@ -70,13 +70,15 @@ $(document).ready(function() {
       "<i class='fa fa-caret-left'></i>",
       "<i class='fa fa-caret-right'></i>"
     ],
-          lazyLoad : true,
           loop:true,
-          margin:10,
-          autoplay:true,
-          autoplayTimeout:1000,
-          navigation : true,
-          slideSpeed: 800,
-          pagination: true
+          autoPlay      : true,
+          stopOnHover     : true,
+          pagination      : false,
+          itemsDesktop    : [1199,4],
+          itemsDesktopSmall   : [980,4],
+          itemsTablet     : [768,3],
+          itemsMobile     : [479,1],
+          navigation      : true
       });
 });
+
