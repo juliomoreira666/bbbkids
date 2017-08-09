@@ -64,25 +64,19 @@ $(document).ready(function() {
     }
   })
 
-  $('.owl-carousel-4').owlCarousel({
-    loop: true,
-    navigation: true,
-    navigationText: [
+ $(".prat-home > ul").owlCarousel({
+          items : 4,
+          navigationText: [
       "<i class='fa fa-caret-left'></i>",
       "<i class='fa fa-caret-right'></i>"
     ],
-    margin: 20,
-    nav: true,
-    responsive: {
-      0: {
-        items: 4
-      },
-      600: {
-        items: 4
-      },
-      1000: {
-        items: 4
-      }
-    }
-  })
+          lazyLoad : true,
+          loop:true,
+          margin:10,
+          autoplay:true,
+          autoplayTimeout:1000,
+          navigation : true,
+          slideSpeed: 800,
+          pagination: true
+      });
 });

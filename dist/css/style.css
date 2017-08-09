@@ -51,23 +51,48 @@ li {
 
 /*Efeitos*/
 
-.productName a {
+.prat-home .product-name a {
+  color: #5f5f5f;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+}
+
+.prat-home .best-price {
+  display: block;
+  text-align: left;
+  color: #46a393;
+  font-size: 25px;
+  text-transform: uppercase
+}
+
+.prat-home .product-image img {
+margin: 0 auto;
+width: 100%;
+display: block;
+height: auto;
+}
+
+.prat-home .add {
+  display: none;
+}
+
+.prat-home h2 {
+display: none;
+}
+
+a {
   color: #5f5f5f;
   font-size: 15px;
 }
 
-.oldPrice {
+.old-price {
+  display: block;
   color: #5f5f5f;
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: line-through;
-}
-
-.valor-boleto {
-  color: #46a393;
-  font-weight: 700;
-  font-size: 25px;
-  text-transform: uppercase;
 }
 
 #half-banners img {
@@ -119,13 +144,12 @@ li {
 }
 
 .menu-principal li {
-  padding-right: 10px;
   cursor: pointer;
   color: #282828;
   vertical-align: middle;
   text-align: center;
   background-color: #ffd000;
-  width: 158px;
+  width: 148px;
   display: inline-table;
   vertical-align: middle;
   text-transform: uppercase;
@@ -473,4 +497,72 @@ li {
 #carousel-6 {
   margin-top: 50px!important;
   margin-bottom: 50px!important;
+}
+
+.prat-home li .image img {
+  width: 100%;
+  float: left;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  transform: scale(1);
+  transition: .3s;
+}
+
+.imagem_opcoes {
+  display: none;
+}
+
+header .portal-totalizers-ref .amount-items span, header .portal-totalizers-ref .amount-kits, header .portal-totalizers-ref .amount-products, header .portal-totalizers-ref .title, header .portal-totalizers-ref .total-cart strong {
+  display: none;
+}
+
+header .portal-totalizers-ref .amount-items em {
+  float: left;
+  width: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  text-align: right;
+  margin: -34px 0px 0 -39px;
+}
+header .total-cart {
+  float: left;
+  width: 120px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  text-align: l;
+  margin: -60px 0px 0 -39px;
+}
+header .portal-totalizers-ref .amount-items em:after {
+  content: "ITENS";
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0 0 0 5px;
+}
+
+header .portal-minicart-ref>div {
+  display: none!important
+}
+
+/*Hover menu*/
+
+.hover-roupas {
+  background-color: #ffffff;
+  z-index: 9;
+}
+.hover-roupas li {
+  background-color: transparent!important;
+  text-align: left;
+  text-transform: capitalize;
+}
+.hover-roupas strong {
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  color: #565656;
+}
+.hover-roupas .colunaMenuUm {
+  margin-bottom: 30px;
 }
