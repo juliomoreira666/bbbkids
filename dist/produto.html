@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
-
-<head>
-  <title>
-    <vtex.cmc:productPageTitle /> </title>
-  <vtex:metaTags/>
-  <vtex:template id="01-CSS" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body id="product-page">
-  <!--  SubTemplate: Header -->
-  <vtex:template id="01-header" />
-  <!-- /SubTemplate: Header -->
-  <div class="row-reset">
-    <div class="container">
-      <div id="breadTree" class="col-md-12">
-        <vtex.cmc:breadCrumb />
-      </div>
-      <div id="produtoImagem" class="col-xs-12 col-sm-7 col-lg-6 text-center col-md-6">
-        <vtex.cmc:ProductImage zoom="on" />
-      </div>
-      <div id="produtoBuy" class="col-xs-12 col-sm-7 col-lg-6 col-md-6">
-        <div id="nomeP">
-          <h1><vtex.cmc:productName /></h1>
-          <vtex.cmc:evaluationRate/>
-        </div>
-        <div id="shortP">
-          <vtex.cmc:productDescriptionShort />
-        </div>
-        <div id="selecionaSku" class="seletor-sku">
-          <vtex.cmc:stockKeepingUnitSelection />
-        </div>
-        <div id="priceP" class="col-md-6">
-          <!--  Component: Sellers -->
-          <vtex.cmc:SellerOptions />
-
-          <!--  Component: Price -->
-          <vtex.cmc:skuPrice />
-
-          <!--  Component: Sales channels -->
-          <vtex.cmc:SalesChannelDropList />
-
-          <!--  Component: Addicional services -->
-          <vtex.cmc:stockKeepingUnitService />
-
-          <!--  Component: Payment methods -->
-          <!-- <vtex.cmc:OtherPaymentMethod/> -->
-        </div>
-        <div id="compreP" class="col-md-6">
-          <vtex.cmc:BuyButton />
-        </div>
-        <div id="payementP">
-          <vtex.cmc:OtherPaymentMethod/>
-          <li>indique um amigo</li>
-        </div>
-        <div class="product-description-box">
-          <div class="showcase-default showcase-owl">
-            <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
-          </div>
-          <!-- .showcase-default -->
-        </div>
-
-        <div id="descP">
-          <div id="description">
-            <h2 class="title">Descrição</h2>
-            <!--  Component: Description -->
-            <vtex.cmc:ProductDescription />
-          </div>
-          <!-- .description -->
-        </div>
-
-        <div id="especP">
-          <div id="specification">
-            <!--  Component: Specification -->
-            <vtex.cmc:productSpecification />
-          </div>
-          <!-- .description -->
-        </div>
-
-        <div id="QVVT">
-          <div class="showcase-default showcase-owl">
-            <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
-          </div>
-          <!-- .showcase-default -->
-        </div>
-
-        <div id="evaluationP">
-          <div class="product-description-box">
-            <div id="reviews" class="rating">
-              <vtex.cmc:UserReview/>
+   <head>
+      <title>
+         <vtex.cmc:productPageTitle />
+      </title>
+      <vtex:metaTags/>
+      <vtex:template id="01-CSS" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body id="product-page">
+      <!--  SubTemplate: Header -->
+      <vtex:template id="01-header" />
+      <!-- /SubTemplate: Header -->
+      <div class="row-reset">
+         <div class="container">
+            <div id="breadTree" class="col-md-12">
+               <vtex.cmc:breadCrumb />
             </div>
-          </div>
-
-
-        </div>
+            <div id="produtoImagem" class="col-xs-12 col-sm-7 col-lg-6 text-center col-md-6">
+               <vtex.cmc:ProductImage zoom="on" />
+            </div>
+            <div id="produtoBuy" class="col-xs-12 col-sm-7 col-lg-6 col-md-6">
+               <div id="nomeP">
+                  <h1>
+                     <vtex.cmc:productName />
+                  </h1>
+                  <vtex.cmc:evaluationRate/>
+               </div>
+               <div id="shortP">
+                  <vtex.cmc:productDescriptionShort />
+               </div>
+               <div id="selecionaSku" class="seletor-sku">
+                  <vtex.cmc:stockKeepingUnitSelection />
+               </div>
+               <div id="priceP" class="col-md-6">
+                  <!--  Component: Sellers -->
+                  <vtex.cmc:SellerOptions />
+                  <!--  Component: Price -->
+                  <vtex.cmc:skuPrice />
+                  <!--  Component: Sales channels -->
+                  <vtex.cmc:SalesChannelDropList />
+                  <!--  Component: Addicional services -->
+                  <vtex.cmc:stockKeepingUnitService />
+                  <!--  Component: Payment methods -->
+                  <!-- <vtex.cmc:OtherPaymentMethod/> -->
+               </div>
+               <div id="compreP" class="col-md-6">
+                  <vtex.cmc:BuyButton />
+               </div>
+               <div id="payementP">
+                  <vtex.cmc:OtherPaymentMethod/>
+                  <li>indique um amigo</li>
+               </div>
+            </div>
+         </div>
+         <div class="row-reset row">
+         <div class="container">
+         <div class="col-md-12">
+            <div class="product-description-box">
+               <div class="showcase-default showcase-owl">
+                  <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
+               </div>
+               <!-- .showcase-default -->
+            </div>
+            <div id="descP">
+               <div id="description">
+                  <h2 class="title">Descrição</h2>
+                  <!--  Component: Description -->
+                  <vtex.cmc:ProductDescription />
+               </div>
+               <!-- .description -->
+            </div>
+            <div id="especP">
+               <div id="specification">
+                  <!--  Component: Specification -->
+                  <vtex.cmc:productSpecification />
+               </div>
+               <!-- .description -->
+            </div>
+            <div id="QVVT">
+               <div class="showcase-default showcase-owl">
+                  <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
+               </div>
+               <!-- .showcase-default -->
+            </div>
+            <div id="evaluationP">
+               <div class="product-description-box">
+                  <div id="reviews" class="rating">
+                     <vtex.cmc:UserReview/>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-    <!-- Footer -->
-    <vtex:template id="01-footer" />
-    <!-- Footer -->
-    <vtex:template id="commonScripts" />
-</body>
-
+      </div>
+      </div>
+      <!-- Footer -->
+      <vtex:template id="01-footer" />
+      <!-- Footer -->
+      <vtex:template id="commonScripts" />
+   </body>
 </html>
