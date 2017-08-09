@@ -547,7 +547,6 @@ header .portal-minicart-ref>div {
 }
 
 /*Hover menu*/
-
 .hover-roupas {
   background-color: #ffffff;
   z-index: 9;
@@ -565,4 +564,82 @@ header .portal-minicart-ref>div {
 }
 .hover-roupas .colunaMenuUm {
   margin-bottom: 30px;
+}
+
+/* Página de produto */
+#breadTree li a {
+display: block;
+display: inline-table;
+color: #868686;
+}
+#breadTree li {
+  display: inline-table;
+  width: 10%;
+  color: #868686;
+  text-transform: uppercase;
+}
+#breadTree li:after {
+  color: #868686;
+  margin-left: 10%;
+  width: 10%;
+  text-align: right;
+  content: "/";
+  display: inline-block;
+}
+#breadTree  .last:after {
+content: "";
+}
+#breadTree {
+text-align: left;
+padding: 15px;
+height: 45px;
+}
+
+#nomeP {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+#nomeP h1 {
+  font-size: 30px!important;
+  color: #535353!important;
+  text-transform: capitalize;
+}
+
+#selecionaSku {
+  width: 100%;
+  text-align: left;
+}
+
+#selecionaSku ul {
+  padding: 0px;
+}
+
+.skuList input[type="radio"] {
+    display: none;
+}
+#selecionaSku  .item-dimension-Tamanho label {
+    border-radius: 50%;
+    background: #eaeaea;
+    width: 50px;
+    height: 50px;
+    font-weight: 700!important;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 10px;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #959595!important;
+}
+
+#selecionaSku  .item-dimension-Tamanho label:hover {
+  border: 1px solid #959595;
+}
+
+#selecionaSku .item-dimension-Tamanho .sku-picked {
+  border: 1px solid #959595;
 }
