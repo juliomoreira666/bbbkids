@@ -509,6 +509,11 @@ a {
   transition: .3s;
 }
 
+
+#ajaxBusy {
+  display: none;
+}
+
 .imagem_opcoes {
   display: none;
 }
@@ -658,4 +663,23 @@ height: 45px;
 
 #selecionaSku .item-dimension-Tamanho .sku-picked {
   border: 1px solid #959595;
+}
+
+#payementP {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 0 auto;
+  height: 114px;
+}
+
+.skuBestPrice {
+  color: #242424;
+}
+
+#compreP .buy-button  {
+  background-color: #78cecd;
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: uppercase;
 }
