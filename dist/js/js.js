@@ -1,5 +1,22 @@
 $(document).ready(function() {
+$('.submenu-calcados').hide();
+    
+    $(".btn-calcados, .submenu-calcados").mouseenter(function() {
+        $('.submenu-calcados').show();
+    }) 
+    $(".btn-calcados, .submenu-calcados").mouseleave(function() {
+        $('.submenu-calcados').hide();
+    });
+    
+$('#newsletterButtonOK').val('CADASTRAR');
+    
+    var text = document.querySelector("#NewsLetter_3e500739_4c49_4c6a_a2be_4a6050e6c6d1 > fieldset:nth-child(2) > p:nth-child(1)");
+    
+    text.textContent = ("ASSINE NOSSA NEWSLETTER");
+    $(text).append("<p>Recebe nossas ofertas exclusivas!</p>");
 
+});
+$(document).ready(function() {
   $("#owl-demo").owlCarousel({
     pagination: false,
     navigation: true,
@@ -12,8 +29,8 @@ $(document).ready(function() {
     itemsDesktop: false,
     itemsDesktopSmall: false,
     navigationText: [
-      '<button class="fa fa-chevron-left"></button>',
-      '<button class="fa fa-chevron-right"></button>'
+      '<button class="fa fa-angle-left"></button>',
+      '<button class="fa fa-angle-right"></button>'
     ],
     itemsTablet: false,
     itemsMobile: false
@@ -25,8 +42,8 @@ $(document).ready(function() {
     margin: 10,
     navigation: true,
     navigationText: [
-      "<i class='fa fa-caret-left'></i>",
-      "<i class='fa fa-caret-right'></i>"
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
     ],
     autoplay: true,
     autoplayHoverPause: true,
@@ -46,8 +63,8 @@ $(document).ready(function() {
     loop: true,
     navigation: true,
     navigationText: [
-      "<i class='fa fa-caret-left'></i>",
-      "<i class='fa fa-caret-right'></i>"
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
     ],
     margin: 10,
     nav: true,
@@ -67,8 +84,8 @@ $(document).ready(function() {
  $(".prat-home > ul").owlCarousel({
           items : 4,
           navigationText: [
-      "<i class='fa fa-caret-left'></i>",
-      "<i class='fa fa-caret-right'></i>"
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
     ],
           loop:true,
           autoPlay      : true,
@@ -80,5 +97,5 @@ $(document).ready(function() {
           itemsMobile     : [479,1],
           navigation      : true
       });
+        
 });
-
