@@ -9,35 +9,17 @@
              //});
 //});
  $(document).ready( function(){
-	if( $.fn.ADMAKEadvancedFilter ){
-		$(document).ADMAKEadvancedFilter({
-            tipoFiltros     : {},
-		});
-	}
-	if( $.fn.ADMAKEmenu ){
-		$(document).ADMAKEmenu();
-	}
-	$('.col-mini-cart').ADMAKEminiCart({
-		miniCartQtd : '.mini-cart-qty-admake',
-	});
-
-	var $btnComprar = $('.btn-add-buy-button-asynchronous');
-	if( $btnComprar.length ){
-		$btnComprar.html('Comprar <i class="fa fa-shopping-cart"></i>');
-	}
-
 	var $btnComprarProduto = $('.buy-button.buy-button-ref');
 	if( $btnComprarProduto.length ){
-
-		if( $('#comprar-flutuante').length ){
-			var $comprarFlutuante = $('#comprar-flutuante');
-			var btnComprarTop = $('.product-info .buy-button-box').offset().top;
+		if( $('#divFlutuante').length ){
+			var $comprarFlutuante = $('#divFlutuante');
+			var btnComprarTop = $('#divFlutuante .buy-button-ref').offset().top;
 			$(window).scroll( function(){
-				if( $(window).width() > 768 ){
+				if( $(window).width() > 300 ){
 					if( $(this).scrollTop() >= btnComprarTop && !$comprarFlutuante.is(':visible') ){
 						$comprarFlutuante.fadeIn( function(){
 							var urlImage = ( $('#include #image-main').attr('src') != '' ) ? $('#include #image-main').attr('src') : '/arquivos/sem-foto.gif';
-							$('#foto-comprar-flutuante').attr('src', urlImage);
+							$('#divFlutuante #image-main').attr('src', urlImage);
 							$('body').css('padding-bottom', $comprarFlutuante.height() + 30);
 						});
 					}else if( $(this).scrollTop() < btnComprarTop && $comprarFlutuante.is(':visible') ){
@@ -48,17 +30,15 @@
 				}
 			});
 		}
-
-
 		$btnComprarProduto.html('Comprar <i class="fa fa-shopping-cart"></i>');
 
-		$btnComprarProduto.click( function(){
-			var $this = $(this);
-			var url   = $this.attr('href');
-			if( url.indexOf('qty=1') > 0 ){
-				$this.attr('href', url.replace('qty=1', 'qty='+ parseInt( $('.buy-button-box .box-qtd .qtd').val() ) ) );
-			}
-		});
+		//$btnComprarProduto.click( function(){
+			//var $this = $(this);
+			//var url   = $this.attr('href');
+			//if( url.indexOf('qty=1') > 0 ){
+			//	$this.attr('href', url.replace('qty=1', 'qty='+ parseInt( $('.buy-button-box .box-qtd .qtd').val() ) ) );
+			//}
+		//});
 
 		var $recebeQtyForm = $btnComprarProduto.parents('.buy-button-box');
 		if( $recebeQtyForm.length ){
@@ -137,15 +117,23 @@
 			    itemsTablet 		: [768,3],
 			    itemsMobile 		: [479,1],
 			    navigation 			: true,
-			    navigationText 		: ['<button class="btn btn-default btn-lg"><i class="fa fa-angle-left"></i></button>','<button class="btn btn-default btn-lg"><i class="fa fa-angle-right"></i></button>'],
+			    navigationText 		: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 			});
 		}
 
 	}
+
+
+
 // Alterações de textos
 var tamanho = document.querySelector("ul.topic:nth-child(1) > li:nth-child(1)");
 tamanho.textContent = "Escolha o Tamanho:";
 var cor = document.querySelector("ul.topic:nth-child(2) > li:nth-child(1)");
 cor.textContent = "Escolha a Cor:";
 
+// Abrir e fechar meios de pagamentos
+$( "#paymentHidden" ).click(function() {
+  $( ".meioPagamento" ).toggle( "slow", function() {
+  });
+});
 });

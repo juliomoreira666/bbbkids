@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
 
+/*Gamb para resetar font do bootstrap*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,6 +15,10 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   font-family: 'Roboto', sans-serif!important;
+}
+
+body {
+  padding-bottom: 0px!important;
 }
 
 li {
@@ -314,8 +319,8 @@ a {
 }
 
 #half-banners div {
-  padding-left: 0px!important;
-  padding-right: 0px!important;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #carousel-3 .owl-controls {
@@ -594,7 +599,7 @@ header .portal-minicart-ref>div {
   margin-bottom: 30px;
 }
 
-/* Página de produto */
+/* PÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡gina de produto */
 #breadTree li a {
 display: block;
 display: inline-table;
@@ -605,6 +610,8 @@ color: #868686;
   width: 10%;
   color: #868686;
   text-transform: uppercase;
+  margin-left: 10px;
+  text-align: r;
 }
 #breadTree li:after {
   color: #868686;
@@ -623,6 +630,11 @@ padding: 15px;
 height: 45px;
 margin-top: 25px;
 margin-bottom: 25px;
+}
+
+#breadTree ul {
+ margin: 0;
+ padding: 0;
 }
 
 #nomeP {
@@ -677,7 +689,7 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
     width: 60px;
     height: 60px;
     font-weight: 700!important;
-    font-size: 18px;
+    font-size: 0px;
     text-transform: uppercase;
     text-align: center;
     padding: 11px 10px;
@@ -692,8 +704,21 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
   background-color: #d28492;
 }
 
+.skuespec_Azul {
+  background-color: #4169E1;
+}
+
+ .skuespec_Mescla-vinho {
+  background-color: #D8BFD8;
+}
+
+.item_unavailable {
+  background: #DCDCDC!important;
+  border: 1px solid #FF6347!important;
+}
+
 #selecionaSku  .item-dimension-Cor label:hover {
-  border: 2px solid #959595;
+  border: 1px solid #959595;
 }
 
 #selecionaSku .item-dimension-Cor .sku-picked {
@@ -711,15 +736,20 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
   padding: 20px;
   background-color: #f1f1f1;
   border-radius: 1px;
-  height: 113px;
+  height: 125px;
   /*! margin: 10px; */
 }
 .box-price .col-md-6  {
 padding: 0px!important;
 }
-.skuBestPrice {
+.descricao-preco .skuBestPrice {
   color: #242424;
-  font-size: 3em;
+  font-size: 2.4em;
+  font-weight: 400;
+}
+#divFlutuante .skuBestPrice {
+  color: #242424;
+  font-size: 2.5em;
   font-weight: 400;
 }
 #compreP .buy-button {
@@ -734,17 +764,16 @@ padding: 0px!important;
   border-width: 2px 4px;
   border-radius: 40px;
 }
-#image-main {
+#produtoImagem #image-main {
   border: 1px solid #E1E1E1;
-  width: 100%;
+  width: 540px;
   height: auto;
-  /*! display: inline-block; */
-/*! margin-left: -500px; */
-/*! margin-right: -500px; */
-
+  display: inline-block;
+  margin-left: -598px;
+  margin-right: -733px;
 }
 
-.thumbs{
+#produtoImagem .thumbs{
 left: -25px;
 top: 0px;
 float: left;
@@ -755,7 +784,7 @@ position: absolute;
 z-index: 4;
 }
 
-.thumbs li {
+#produtoImagem .thumbs li {
 border: 1px solid #E1E1E1;
 width: 110px !important;
 margin: 0 10px 10px 0;
@@ -785,7 +814,7 @@ text-align: center;
   font-size: 16px;
 }
 
-/* Avaliações estrelas do capeta */
+/* AvaliaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes estrelas do capeta */
 #nomeP > strong:nth-child(2) {
   display: none;
 }
@@ -808,7 +837,7 @@ text-align: center;
     border-bottom: 3px solid #CC9342;
   }
     #reviews ul.rating li .voteRatingBar + span { 
-      color: #9B9B9B; 
+      color: #9B9B9B00; 
       font-size: 12px;
       position: absolute; 
       right: 10px;
@@ -987,11 +1016,16 @@ text-align: center;
     }
     #reviews #formUserReview .avaliar a,
     #reviews #lnkPubliqueResenha { 
-      background-color: #D0021B; 
+      background-color: #78cecd; 
+      left: 70%;
+      top: 84%;
       border: 0 none; 
-      border-radius: 4px; 
+      position: absolute;
+      border-width: 2px 4px;
+      border-radius: 40px;
       color: #fff; 
       display: block; 
+      float: right;
       font-size: 14px; 
       font-weight: 400; 
       line-height: 20px; 
@@ -1147,4 +1181,241 @@ color: #5f5f5f!important;
 }
 .productDescription {
   margin-bottom: 30px!important;
+}
+
+/*ZOOM*/
+#produtoImagem .zoomPad {
+    width: 100%;
+    cursor: crosshair;
+    float: left;
+    position: relative;
+}
+
+    #produtoImagem .zoomPad img {
+        margin: 0 auto;
+        display: block;
+    }
+
+#produtoImagem .zoomPreload {
+    -moz-opacity: .8;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #333;
+    font-size: 12px;
+    font-family: Tahoma;
+    text-decoration: none;
+    border: 1px solid #CCC;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+    background-image: url('http://www.yellowlab.com.br/content/img/preloader.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#produtoImagem .zoomPup {
+    overflow: hidden;
+    background-color: #FFF;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    position: absolute;
+    border: 1px solid #CCC;
+    cursor: crosshair;
+}
+
+#produtoImagem .zoomOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#produtoImagem .zoomWindow {
+    position: absolute;
+    left: 0 !important;
+    top: 40px;
+    background: #FFF;
+    height: 580px;
+}
+
+#produtoImagem .zoomWrapper {
+    position: relative;
+    border: 1px solid #999;
+    width: 531px !important;
+    height: 580px !important;
+    width: 580px !important;
+}
+
+#produtoImagem .zoomWrapperTitle {
+    display: block;
+    background: #999;
+    color: #FFF;
+    height: 18px;
+    line-height: 18px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+#produtoImagem .zoomWrapperImage {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 580px !important;
+    width: 580px !important;
+}
+
+    #produtoImagem .zoomWrapperImage img {
+        border: 0;
+        position: relative;
+        display: block;
+    }
+
+#produtoImagem .zoomIframe {
+    z-index: -1;
+    filter: alpha(opacity=0);
+    -moz-opacity: .8;
+    opacity: .8;
+    position: absolute;
+    display: block;
+}
+
+#divFlutuante .thumbs {
+display: none;
+}
+
+#divFlutuante {
+  border-radius: 2px;
+  display: none;
+  width: 20%;
+  float: right;
+  position: fixed;
+  left: 80%;
+  top: 20%;
+  background-color: #F5F5F5;
+  height: auto;
+  /* margin: 12px; */
+  padding: 30px;
+}
+
+#divFlutuante #image-main {
+   width: 200px!important;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+  text-align: center;
+}
+
+#divFlutuante .zoomPup {
+display: none;
+}
+
+#divFlutuante .zoomWindow {
+  display: none;
+}
+
+ #divFlutuante .zoomWrapper {
+  display: none;
+ }
+
+header section {
+  display: none!important;
+}
+
+#divFlutuante .buy-button {
+    line-height: 2.5em;
+    width: 100%;
+    height: 62px;
+    background-color: #78cecd;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-width: 2px 4px;
+    border-radius: 40px;
+}
+
+.meioPagamento {
+  display: none;
+}
+
+#divFlutuante .floatName {
+font-size: 24px;
+color: #5b5a5a;
+}
+
+#divFlutuante .floatPrice {
+  margin-top:10px;
+}
+
+#payementP li {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 19px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+#payementP {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) { 
+#divFlutuante {
+  display: none!important;
+}
+
+ }
+
+ #divFlutuante .valor-de {
+    margin-bottom: 10px;
+    font-weight: normal!important;
+    color: #949494;
+    font-size: 18px;
+    text-decoration: line-through;
+ }
+
+#priceP .valor-de {
+  margin-bottom: 10px;
+  font-weight: normal!important;
+  color: #949494;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+#priceP .valor-de strong {
+  font-weight: normal!important;
+  color: #949494;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.portal-notify-me-ref {
+  background: #F1F1F1;
+  margin: auto;
+  position:relative;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+#reviews {
+  padding: 10px;
+  margin-top: 50px;
+  border-top: 1px solid #ebebeb;
 }
