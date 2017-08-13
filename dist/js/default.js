@@ -123,8 +123,6 @@
 
 	}
 
-
-
 // Alterações de textos
 var tamanho = document.querySelector("ul.topic:nth-child(1) > li:nth-child(1)");
 tamanho.textContent = "Escolha o Tamanho:";
@@ -136,4 +134,7 @@ $( "#paymentHidden" ).click(function() {
   $( ".meioPagamento" ).toggle( "slow", function() {
   });
 });
+
+//Inserção tabela de medidas
+$(tamanho).append('<li data-toggle="modal" data-target="#myModal" id="tableMedidas"><img src="http://i.imgur.com/SrDCFxx.png"/></li>');
 });

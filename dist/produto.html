@@ -22,9 +22,7 @@
       </div>
       <div id="produtoBuy" class="col-xs-12 col-sm-12 col-lg-5 col-md-12">
         <div id="nomeP">
-          <h1>
-                     <vtex.cmc:productName />
-                  </h1>
+          <h1><vtex.cmc:productName /></h1>
           <vtex.cmc:evaluationRate/>
         </div>
         <div id="shortP">
@@ -67,7 +65,6 @@
             <div class="showcase-default showcase-owl">
               <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
             </div>
-            <!-- .showcase-default -->
           </div>
           <div id="descP">
             <div id="description">
@@ -88,7 +85,6 @@
             <div class="showcase-default showcase-owl">
               <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
             </div>
-            <!-- .showcase-default -->
           </div>
           <div id="evaluationP">
             <div class="product-description-box">
@@ -102,6 +98,8 @@
     </div>
   </div>
   <div id="divFlutuante">
+    <span id="floatFechar"></span>
+    <div class="ocultaaqui">
     <div class="floatImg">
       <vtex.cmc:ProductImage />
     </div>
@@ -114,7 +112,26 @@
     <div class="floatBuy">
       <vtex.cmc:BuyButton />
     </div>
+    </div>
   </div>
+  <!-- Modal tabela de medidas  -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- conteudo modal medidas -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <vtex:contentPlaceHolder id="tabela-de-medidas" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
   <!-- Footer -->
   <vtex:template id="01-footer" />
   <!-- Footer -->
