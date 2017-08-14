@@ -830,6 +830,14 @@ text-align: center;
   line-height: 1.5em;
 }
 
+#divFlutuante .productPrice  {
+  font-weight: bold;
+}
+
+#divFlutuante .valor-de strong {
+  font-weight: normal!important;
+}
+
 .specification {
   color: #707070;
   font-size: 16px;
@@ -1242,7 +1250,7 @@ display: none;
 }
 
 #divFlutuante {
-  z-index: 9;
+  z-index: 10;
   border-radius: 2px;
   display: none;
   right: -19.5%;
@@ -1298,7 +1306,7 @@ header section {
 }
 
 #divFlutuante .floatName {
-font-size: 24px;
+font-size: 18px;
 color: #5b5a5a;
 }
 
