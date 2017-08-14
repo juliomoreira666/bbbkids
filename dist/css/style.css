@@ -846,7 +846,8 @@ text-align: center;
   height: 20px;  
   overflow: hidden; 
   border: 1px solid #e5e5e5; 
-  border-radius: 25px;
+  box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.10); 
+  border-radius: 3px;
 }
   #reviews ul.rating li .voteRatingBar span { 
     background: none repeat scroll 0 0 #F0AD4E; 
@@ -1187,9 +1188,6 @@ text-align: center;
     .rating-wrapper .rating.a0:before {
       content: "\f006   \f006   \f006   \f006   \f006";
     }
-   .avaliacao .media {
- 	display: none;
-}
     #description {
       margin-bottom: 50px;
       /*! padding: 25px; */
@@ -1323,23 +1321,23 @@ color: #5f5f5f!important;
 display: none;
 }
 
+.divFlutuanteAberta {
+  left: 80%!important;
+}
+
 #divFlutuante {
   z-index: 9;
   border-radius: 2px;
   display: none;
+  right: -19.5%;
   width: 20%;
   float: right;
   position: fixed;
-  right: -19.5%;
   top: 20%;
   background-color: #F5F5F5;
   height: auto;
   /* margin: 12px; */
   padding: 30px;
-}
-
-.divFlutuanteAberta {
-  left: 80%!important;
 }
 
 #divFlutuante #image-main {
