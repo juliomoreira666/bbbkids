@@ -1458,4 +1458,20 @@ float: right;
 text-align: right;
 }
 
- 
+.seta-left {
+  background-image: url(/arquivos/arrow.png);
+  transform: rotate(180deg);
+  display: inline-block;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+} 
+.seta-right {
+  background-image: url(/arquivos/arrow.png);
+  display: inline-block;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+}
