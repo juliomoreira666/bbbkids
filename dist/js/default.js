@@ -137,4 +137,9 @@ $( "#paymentHidden" ).click(function() {
 
 //Inserção tabela de medidas
 $(tamanho).append('<li data-toggle="modal" data-target="#myModal" id="tableMedidas"><img src="http://i.imgur.com/SrDCFxx.png"/></li>');
+
+// Div flutuante abrir e fechar
+$('#floatFechar').click(function(){
+  $('#divFlutuante').toggleClass('divFlutuanteAberta');
+});
 });
