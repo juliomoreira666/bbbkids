@@ -1226,7 +1226,7 @@ color: #5f5f5f!important;
 }
 
  .image-zoom {
- cursor:default;
+ cursor:crosshair;
 }
 
 #include .image-zoom {
