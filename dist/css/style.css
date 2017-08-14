@@ -636,8 +636,6 @@ content: "";
 text-align: left;
 padding: 15px;
 height: 45px;
-margin-top: 25px;
-margin-bottom: 25px;
 }
 
 #breadTree ul {
@@ -1342,6 +1340,10 @@ color: #5b5a5a;
   margin-top: 20px;
 }
 
+.box-banner img {
+    width: 100%;
+    height: auto;
+}
 @media screen and (min-width: 320px) and (max-width: 1000px) { 
 #divFlutuante {
   display: none!important;
