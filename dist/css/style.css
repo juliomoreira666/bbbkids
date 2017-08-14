@@ -850,6 +850,7 @@ text-align: center;
     border-bottom: 3px solid #CC9342;
   }
     #reviews ul.rating li .voteRatingBar + span { 
+      display:none;
       color: #9B9B9B00; 
       font-size: 12px;
       position: absolute; 
