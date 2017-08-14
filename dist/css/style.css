@@ -1465,6 +1465,33 @@ float: right;
 text-align: right;
 cursor: pointer;
 }
+.produto .owl-controls {
+    position: absolute;
+    z-index: 10;
+    width: 106%;
+    top: 40%;
+    height: 0px;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    left: -3%;
+}
+.produto .seta-left {
+  background-image: url(/arquivos/arrow.png);
+  transform: rotate(180deg);
+  display: inline-block;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+} 
+.produto .seta-right {
+  background-image: url(/arquivos/arrow.png);
+  display: inline-block;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+}
 
 .seta-left {
   background-image: url(/arquivos/arrow.png);
