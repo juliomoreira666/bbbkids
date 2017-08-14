@@ -19,6 +19,7 @@ time, mark, audio, video {
 
 body {
   padding-bottom: 0px!important;
+  overflow-x: hidden;
 }
 
 li {
@@ -1511,11 +1512,25 @@ display: none!important;
   text-align: center;
   line-height: 1.5;
 }
-
-.newsletter {
-  text-align: center;
-}
-
 .newsletter h3 {
   margin-bottom: 0px;
+}
+
+.menu-principal:after {
+content: ' ';
+position: absolute;
+background: #ffd000;
+display: inline-flex;
+height: 30px;
+width: 19%;
+}
+
+.conteudo-header:after {
+content: ' ';
+margin-left: -10px;
+position: absolute;
+background: #EBEBEB;
+display: inline-flex;
+height: 26px;
+width: 13.7%;
 }
