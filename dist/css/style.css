@@ -1497,3 +1497,17 @@ cursor: pointer;
 #divFlutuante .zoomWindow {
 display: none!important;
 }
+.success {
+  vertical-align: middle;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.newsletter h3 {
+  margin-bottom: 0px;
+}

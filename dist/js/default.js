@@ -161,4 +161,7 @@ $(document).ready(function() {
   });
   //Simula abertura da div flutuante
   $('#floatFechar').trigger('click');
+
+  //inserção icone zoom img
+  
 });
