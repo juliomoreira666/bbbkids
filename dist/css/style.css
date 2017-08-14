@@ -1475,3 +1475,66 @@ text-align: right;
   position: absolute;
   right: 0;
 }
+.seta-carousel-2-left {
+  background-image: url(/arquivos/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 18px 30px;
+  transform: rotate(180deg);
+  display: inline-block;
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+} 
+.seta-carousel-2-right {
+  background-image: url(/arquivos/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 18px 30px;
+  display: inline-block;
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+.seta-carousel-3-left {
+  background-image: url(/arquivos/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 18px 30px;
+  transform: rotate(180deg);
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  left: 0
+}
+.seta-carousel-3-right {
+  background-image: url(/arquivos/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 18px 30px;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+.seta-prat-home-left {
+  background-image: url(/arquivos/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 18px 30px;
+  transform: rotate(180deg);
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  left: 0
+}
+.seta-prat-home-right {
+  background-image: url(/arquivos/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 18px 30px;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}

@@ -29,8 +29,8 @@ $(document).ready(function() {
     itemsDesktop: false,
     itemsDesktopSmall: false,
     navigationText: [
-      '<button class="fa fa-angle-left"></button>',
-      '<button class="fa fa-angle-right"></button>'
+      '<a class="seta-left"></a>',
+      '<a class="seta-right"></a>'
     ],
     itemsTablet: false,
     itemsMobile: false
@@ -42,8 +42,8 @@ $(document).ready(function() {
     margin: 10,
     navigation: true,
     navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
+      '<a class="seta-carousel-2-left"></a>',
+      '<a class="seta-carousel-2-right"></a>'
     ],
     autoplay: true,
     autoplayHoverPause: true,
@@ -63,8 +63,8 @@ $(document).ready(function() {
     loop: true,
     navigation: true,
     navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
+      '<a class="seta-carousel-3-left"></a>',
+      '<a class="seta-carousel-3-right"></a>'
     ],
     margin: 10,
     nav: true,
@@ -84,8 +84,8 @@ $(document).ready(function() {
  $(".prat-home > ul").owlCarousel({
           items : 4,
           navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
+      '<a class="seta-prat-home-left"></a>',
+      '<a class="seta-prat-home-right"></a>'
     ],
           loop:true,
           autoPlay      : true,
