@@ -1320,12 +1320,16 @@ display: none;
   width: 20%;
   float: right;
   position: fixed;
-  left: 80%;
+  right: -19.5%;
   top: 20%;
   background-color: #F5F5F5;
   height: auto;
   /* margin: 12px; */
   padding: 30px;
+}
+
+.divFlutuanteAberta {
+  left: 80%!important;
 }
 
 #divFlutuante #image-main {
