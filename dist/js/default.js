@@ -117,7 +117,7 @@ $(document).ready(function() {
         itemsTablet: [768, 3],
         itemsMobile: [479, 1],
         navigation: true,
-        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        navigationText: ['<a class="seta-prat-home-left"></a>','<a class="seta-prat-home-right"></a>'],
       });
     }
 
