@@ -104,6 +104,7 @@ $(document).ready(function() {
       });
     }
 
+<<<<<<< HEAD
     var $showCaseOwl = $(".showcase-owl .prateleira > ul");
     if ($showCaseOwl.length) {
       $showCaseOwl.find('.helperComplement').remove();
@@ -120,6 +121,24 @@ $(document).ready(function() {
         navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
       });
     }
+=======
+		var $showCaseOwl = $(".showcase-owl .prateleira > ul");
+		if( $showCaseOwl.length ){
+			$showCaseOwl.find('.helperComplement').remove();
+			$showCaseOwl.owlCarousel({
+			 	items 				: 4,
+			    autoPlay 			: true,
+			    stopOnHover 		: true,
+			    pagination 	 		: false,
+			    itemsDesktop 		: [1199,4],
+			    itemsDesktopSmall 	: [980,4],
+			    itemsTablet 		: [768,3],
+			    itemsMobile 		: [479,1],
+			    navigation 			: true,
+			    navigationText 		: ['<a class="seta-prat-home-left"></a>','<a class="seta-prat-home-right"></a>']
+			});
+		}
+>>>>>>> master
 
   }
 
