@@ -123,6 +123,7 @@
 
 	}
 
+
 // Alterações de textos
 var tamanho = document.querySelector("ul.topic:nth-child(1) > li:nth-child(1)");
 tamanho.textContent = "Escolha o Tamanho:";
@@ -140,6 +141,6 @@ $(tamanho).append('<li data-toggle="modal" data-target="#myModal" id="tableMedid
 
 // Div flutuante abrir e fechar
 $('#floatFechar').click(function(){
-  $('#divFlutuante').toggleClass('divFlutuanteAberta');
+  $('#divFlutuante').toggleClass("divFlutuanteAberta", 'slow', "easeOutSine");
 });
 });
