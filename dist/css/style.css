@@ -839,8 +839,7 @@ text-align: center;
   height: 20px;  
   overflow: hidden; 
   border: 1px solid #e5e5e5; 
-  box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.10); 
-  border-radius: 3px;
+  border-radius: 25px;
 }
   #reviews ul.rating li .voteRatingBar span { 
     background: none repeat scroll 0 0 #F0AD4E; 

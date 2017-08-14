@@ -14,7 +14,6 @@ $('#newsletterButtonOK').val('CADASTRAR');
     
     text.textContent = ("ASSINE NOSSA NEWSLETTER");
     $(text).append("<p>Recebe nossas ofertas exclusivas!</p>");
-
 });
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
