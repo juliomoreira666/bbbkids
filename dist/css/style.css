@@ -606,7 +606,7 @@ header .portal-minicart-ref>div {
   margin-bottom: 30px;
 }
 
-/* PÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡gina de produto */
+/* PÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡gina de produto */
 #breadTree li a {
 display: block;
 display: inline-table;
@@ -1206,17 +1206,18 @@ color: #5f5f5f!important;
 }
 
 /*ZOOM*/
- #include .image-zoom {
+
+#include .image-zoom {
  position:absolute;
  left:50%;
  margin-left:-200px;
  top:0;
  background:#fff
 }
- .zoomPad {
- background:#fff;
+ #include .zoomPad {
+ background:#fff
 }
- .zoomWindow {
+ #include .zoomWindow {
  overflow:hidden;
  float:left;
  left:0!important;
@@ -1225,20 +1226,12 @@ color: #5f5f5f!important;
  background:#fff
 }
 
- .image-zoom {
- cursor:crosshair;
-}
-
 #include .image-zoom {
   position:relative;
   left:0;
   margin-left:0
  }
- #include .image-zoom {
-  position:relative;
-  left:0;
-  margin-left:0;
- }
+
 
 #divFlutuante .thumbs {
 display: none;
@@ -1500,4 +1493,7 @@ cursor: pointer;
   height: 30px;
   position: absolute;
   right: 0;
+}
+#divFlutuante .zoomWindow {
+display: none!important;
 }
