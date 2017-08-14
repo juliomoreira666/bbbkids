@@ -36,7 +36,7 @@ $(document).ready(function() {
     //var $this = $(this);
     //var url   = $this.attr('href');
     //if( url.indexOf('qty=1') > 0 ){
-    //	$this.attr('href', url.replace('qty=1', 'qty='+ parseInt( $('.buy-button-box .box-qtd .qtd').val() ) ) );
+    //  $this.attr('href', url.replace('qty=1', 'qty='+ parseInt( $('.buy-button-box .box-qtd .qtd').val() ) ) );
     //}
     //});
 
@@ -44,11 +44,11 @@ $(document).ready(function() {
     if ($recebeQtyForm.length) {
       $recebeQtyForm.prepend(
         '<div class="pull-left box-qtd">' +
-        '	<input type="text" class="qtd pull-left" value="1" />' +
-        '	<div class="bts pull-left">' +
-        '		<button class="btn btn-mais">+</button>' +
-        '		<button class="btn btn-menos">-</button>' +
-        ' 	</div>' +
+        ' <input type="text" class="qtd pull-left" value="1" />' +
+        ' <div class="bts pull-left">' +
+        '   <button class="btn btn-mais">+</button>' +
+        '   <button class="btn btn-menos">-</button>' +
+        '   </div>' +
         '</div>'
       );
       $(document).on('keypress', '.buy-button-box .box-qtd .qtd', function(e) {
@@ -121,27 +121,27 @@ $(document).ready(function() {
       });
     }
 
-		var $showCaseOwl = $(".showcase-owl .prateleira > ul");
-		if( $showCaseOwl.length ){
-			$showCaseOwl.find('.helperComplement').remove();
-			$showCaseOwl.owlCarousel({
-			 	items 				: 4,
-			    autoPlay 			: true,
-			    stopOnHover 		: true,
-			    pagination 	 		: false,
-			    itemsDesktop 		: [1199,4],
-			    itemsDesktopSmall 	: [980,4],
-			    itemsTablet 		: [768,3],
-			    itemsMobile 		: [479,1],
-			    navigation 			: true,
-			    navigationText 		: ['<a class="seta-prat-home-left"></a>','<a class="seta-prat-home-right"></a>']
-			});
-		}
+    var $showCaseOwl = $(".showcase-owl .prateleira > ul");
+    if( $showCaseOwl.length ){
+      $showCaseOwl.find('.helperComplement').remove();
+      $showCaseOwl.owlCarousel({
+        items         : 4,
+          autoPlay      : true,
+          stopOnHover     : true,
+          pagination      : false,
+          itemsDesktop    : [1199,4],
+          itemsDesktopSmall   : [980,4],
+          itemsTablet     : [768,3],
+          itemsMobile     : [479,1],
+          navigation      : true,
+          navigationText    : ['<a class="seta-prat-home-left"></a>','<a class="seta-prat-home-right"></a>']
+      });
+    }
 
   }
 
 
-  // Alterações de textos
+  // AlteraÃ§Ãµes de textos
   var tamanho = document.querySelector("ul.topic:nth-child(1) > li:nth-child(1)");
   tamanho.textContent = "Escolha o Tamanho:";
   var cor = document.querySelector("ul.topic:nth-child(2) > li:nth-child(1)");
@@ -152,7 +152,7 @@ $(document).ready(function() {
     $(".meioPagamento").toggle("slow", function() {});
   });
 
-  //Inserção tabela de medidas
+  //InserÃ§Ã£o tabela de medidas
   $(tamanho).append('<li data-toggle="modal" data-target="#myModal" id="tableMedidas"><img src="http://i.imgur.com/SrDCFxx.png"/></li>');
 
   // Div flutuante abrir e fechar
@@ -161,4 +161,7 @@ $(document).ready(function() {
   });
   //Simula abertura da div flutuante
   $('#floatFechar').trigger('click');
+
+  //inserção icone zoom img
+  
 });

@@ -19,6 +19,7 @@ time, mark, audio, video {
 
 body {
   padding-bottom: 0px!important;
+  overflow-x: hidden;
 }
 
 li {
@@ -606,7 +607,7 @@ header .portal-minicart-ref>div {
   margin-bottom: 30px;
 }
 
-/* PÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡gina de produto */
+/* PÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡gina de produto */
 #breadTree li a {
 display: block;
 display: inline-table;
@@ -828,6 +829,14 @@ text-align: center;
 
 .productPrice {
   line-height: 1.5em;
+}
+
+#divFlutuante .productPrice  {
+  font-weight: bold;
+}
+
+#divFlutuante .valor-de strong {
+  font-weight: normal!important;
 }
 
 .specification {
@@ -1206,116 +1215,32 @@ color: #5f5f5f!important;
 }
 
 /*ZOOM*/
-#produtoImagem .zoomPad {
-    width: 100%;
-    cursor: crosshair;
-    float: left;
-    position: relative;
+
+#include .image-zoom {
+ position:absolute;
+ left:50%;
+ margin-left:-200px;
+ top:0;
+ background:#fff
+}
+ #include .zoomPad {
+ background:#fff
+}
+ #include .zoomWindow {
+ overflow:hidden;
+ float:left;
+ left:0!important;
+ width:100%;
+ height:100%;
+ background:#fff
 }
 
-    #produtoImagem .zoomPad img {
-        margin: 0 auto;
-        display: block;
-    }
+#include .image-zoom {
+  position:relative;
+  left:0;
+  margin-left:0
+ }
 
-#produtoImagem .zoomPreload {
-    -moz-opacity: .8;
-    opacity: .8;
-    filter: alpha(opacity=80);
-    color: #333;
-    font-size: 12px;
-    font-family: Tahoma;
-    text-decoration: none;
-    border: 1px solid #CCC;
-    background-color: #fff;
-    padding: 8px;
-    text-align: center;
-    background-image: url('http://www.yellowlab.com.br/content/img/preloader.gif');
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#produtoImagem .zoomPup {
-    overflow: hidden;
-    background-color: #FFF;
-    -moz-opacity: .6;
-    opacity: .6;
-    filter: alpha(opacity=60);
-    position: absolute;
-    border: 1px solid #CCC;
-    cursor: crosshair;
-}
-
-#produtoImagem .zoomOverlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #FFF;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-#produtoImagem .zoomWindow {
-    position: absolute;
-    left: 0 !important;
-    top: 40px;
-    background: #FFF;
-    height: 580px;
-}
-
-#produtoImagem .zoomWrapper {
-    position: relative;
-    border: 1px solid #999;
-    width: 531px !important;
-    height: 580px !important;
-    width: 580px !important;
-}
-
-#produtoImagem .zoomWrapperTitle {
-    display: block;
-    background: #999;
-    color: #FFF;
-    height: 18px;
-    line-height: 18px;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    font-size: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -moz-opacity: .6;
-    opacity: .6;
-    filter: alpha(opacity=60);
-}
-
-#produtoImagem .zoomWrapperImage {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    height: 580px !important;
-    width: 580px !important;
-}
-
-    #produtoImagem .zoomWrapperImage img {
-        border: 0;
-        position: relative;
-        display: block;
-    }
-
-#produtoImagem .zoomIframe {
-    z-index: -1;
-    filter: alpha(opacity=0);
-    -moz-opacity: .8;
-    opacity: .8;
-    position: absolute;
-    display: block;
-}
 
 #divFlutuante .thumbs {
 display: none;
@@ -1326,7 +1251,7 @@ display: none;
 }
 
 #divFlutuante {
-  z-index: 9;
+  z-index: 10;
   border-radius: 2px;
   display: none;
   right: -19.5%;
@@ -1382,7 +1307,7 @@ header section {
 }
 
 #divFlutuante .floatName {
-font-size: 24px;
+font-size: 18px;
 color: #5b5a5a;
 }
 
@@ -1590,4 +1515,35 @@ cursor: pointer;
   height: 30px;
   position: absolute;
   right: 0;
+}
+#divFlutuante .zoomWindow {
+display: none!important;
+}
+.success {
+  vertical-align: middle;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+}
+.newsletter h3 {
+  margin-bottom: 0px;
+}
+
+.menu-principal:after {
+content: ' ';
+position: absolute;
+background: #ffd000;
+display: inline-flex;
+height: 30px;
+width: 19%;
+}
+
+.conteudo-header:after {
+content: ' ';
+margin-left: -10px;
+position: absolute;
+background: #EBEBEB;
+display: inline-flex;
+height: 26px;
+width: 13.7%;
 }
