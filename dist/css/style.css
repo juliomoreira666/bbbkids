@@ -1417,11 +1417,17 @@ color: #5b5a5a;
 #payementP {
   margin-top: 20px;
 }
-
+/* Categoria */
 .categoria .box-banner img {
   width: 100%;
   height: auto;
   display: block;
+}
+.categoria #breadTree {
+    font-size: 15px;
+    text-align: left;
+    padding: 15px;
+    height: 45px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1000px) { 
