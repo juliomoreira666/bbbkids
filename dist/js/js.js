@@ -14,6 +14,9 @@ $('#newsletterButtonOK').val('CADASTRAR');
     
     text.textContent = ("ASSINE NOSSA NEWSLETTER");
     $(text).append("<p>Recebe nossas ofertas exclusivas!</p>");
+
+    var textAvaliacoes = document.querySelector("#resenha h4");
+    textAvaliacoes.textContent = ("AVALIAÇÕES");
 });
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
