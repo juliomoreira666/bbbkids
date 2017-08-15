@@ -1365,6 +1365,10 @@ color: #5b5a5a;
   text-align: center;
   padding: 8px 0px;
 }
+.prat-categoria {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
 .prat-categoria ul {
   width:800px;
   flex-wrap: wrap;
