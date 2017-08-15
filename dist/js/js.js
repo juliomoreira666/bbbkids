@@ -7,6 +7,16 @@ $('.submenu-calcados').hide();
     $(".btn-calcados, .submenu-calcados").mouseleave(function() {
         $('.submenu-calcados').hide();
     });
+//Menu Pagina Categoria
+$('.search-single-navigator ul').css('height',0).css('overflow','hidden');
+$('.search-single-navigator h3').addClass('toggle-click'); 
+$('.search-single-navigator h4').addClass('toggle-click');
+$('.search-single-navigator h5').addClass('toggle-click');
+$('.toggle-click').on('click',function(e) {
+  e.preventDefault();
+   $('.search-single-navigator ul').css('height',0)
+   $(this).next('ul').css('height','auto');
+});
 //Menu flutuante e hamburger
   $(function(){
   $(".burger-wrapper").click(function(){
@@ -18,6 +28,7 @@ $('.submenu-calcados').hide();
       $(".menuHamburger").toggle( "slow", function() {
   });
 });
+  //Menu flutuante
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 50) {
         $('#headerFlow').addClass('fixed');
