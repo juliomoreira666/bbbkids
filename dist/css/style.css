@@ -417,15 +417,21 @@ a {
   text-transform: uppercase;
 }
 #newsletterButtonOK {
+	width: 170px;
 	float: right;
+}
+#newsletterClientName {
+	width: 39%;
+	margin-right: 30px;
+}
+#newsletterClientEmail {
+	width: 39%;
 }
 .newsletter p {
     font-size: 20px;
     line-height: 16px;
 }
 .news-news input {
-  width: 39%!important;
-  margin-right: 30px;
   margin-top: 10px;
 }
 
