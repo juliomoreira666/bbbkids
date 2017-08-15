@@ -533,7 +533,9 @@ a {
 
 
 /*Gamb*/
-
+.carousel-wrap .owl-carousel-2 .owl-wrapper-outer .owl-wrapper .owl-item {
+	width: 180px!important;
+}
 .container h2 {
   text-transform: uppercase;
 }

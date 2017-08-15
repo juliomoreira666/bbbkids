@@ -1,0 +1,146 @@
+*{
+    font-style: normal;
+}
+.menu-principal {
+    border-radius: 10px !important;
+    padding-left: 50px;
+    width: 80%;
+    height:30px;
+}
+.menu-principal li {
+    width: 135px;
+    height: 30px;
+    padding-top: 5px;
+}
+li.btn-enxoval {
+    width: 220px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin: 0px 10px;
+}
+li.quarto-banho {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.submenu-roupas, .submenu-calcados, .submenu-enxoval, .submenu-quarto-banho, .submenu-passeio {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    top:146px;
+    left: 0;
+    position: absolute;
+    z-index: 999999;
+    border-top-width:5px;
+    border-top-color: #d9b40e;
+    border-top-style: solid;
+    padding-left: 80px;
+}
+.submenu-roupas  ul, .submenu-calcados ul, .submenu-enxoval ul, .submenu-quarto-banho ul, .submenu-passeio ul {
+    margin-top: 20px;
+    color: dimgray;
+    width: 250px;
+}
+.submenu-roupas li, .submenu-calcados li, .submenu-enxoval li, .submenu-quarto-banho li, .submenu-passeio li {
+    padding: 5px 0px;
+    color: dimgray;
+}
+.hover-roupas li:hover {
+    background-color: dimgray;
+    
+}
+.submenu-roupas .blc-3 ul, .submenu-calcados .blc-3 ul, .submenu-enxoval .blc-3 ul, .submenu-quarto-banho .blc-3 ul, .submenu-passeio .blc-3 ul {
+    width: 350px;
+}
+.btn-roupas:hover {
+    background-color: rgba(128, 128, 128, 0.16);
+}
+.btn-calcados:hover {
+    background-color: rgba(128, 128, 128, 0.16);
+}
+.btn-enxoval:hover {
+    background-color: rgba(128, 128, 128, 0.16);
+}
+.btn-quarto-banho:hover {
+    background-color: rgba(128, 128, 128, 0.16);
+}
+.btn-passeio:hover {
+    background-color: rgba(128, 128, 128, 0.16);
+}
+.barra{
+    margin-top: 20px;
+    width: 1px;
+    height: 300px;
+    background-color: #DCDCDC;
+}
+#half-banners img {
+    padding-left: 20px;
+}
+.owl-item img {
+    padding: 0 10px;
+}
+
+.busca, .btn-buscar {
+    margin-top: 15px;
+}
+.menu-user {
+    margin-top: 15px;
+}
+.menu-principal{
+    margin-top: 15px;
+}
+.seta-left {
+  background-image: url(/arquivos/arrow.png);
+  transform: rotate(180deg);
+  display: inline-block;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+} 
+.seta-right {
+  background-image: url(/arquivos/arrow.png);
+  display: inline-block;
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+}
+.seta-carousel-2-left {
+  width: 55px!important;
+}
+.pedidos-ico:before {
+  margin-bottom: -10px;
+}
+#newsletterButtonOK {
+  width: 170px;
+  float: right;
+}
+#newsletterClientName {
+  width: 39%;
+  margin-right: 30px;
+}
+#newsletterClientEmail {
+  width: 39%;
+}
+.newsletter p {
+    font-size: 20px;
+    line-height: 16px;
+}
+#selecionaSku .item-dimension-Cor label{
+  padding: 5px 25px!important;
+}
+#selecionaSku  .item-dimension-Tamanho label:hover {
+  border: 1px solid gray;
+  color: black!important;
+}
+#selecionaSku .item-dimension-Cor label{
+  width: auto!important;
+}
+.skuespec_Mescla-verde {
+  border: 1px solid #90EE90;
+}
+.skuespec_Mescla-vinho {
+  border: 1px solid #D8BFD8;
+}
