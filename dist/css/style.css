@@ -416,8 +416,12 @@ a {
 .news-news span {
   text-transform: uppercase;
 }
-
+#newsletterButtonOK {
+	float: right;
+}
 .news-news input {
+  width: 39%;
+  margin-left: 30px;
   margin-top: 10px;
 }
 
