@@ -7,7 +7,25 @@ $('.submenu-calcados').hide();
     $(".btn-calcados, .submenu-calcados").mouseleave(function() {
         $('.submenu-calcados').hide();
     });
-
+//Menu flutuante e hamburger
+  $(function(){
+  $(".burger-wrapper").click(function(){
+    $(".show-nav").toggleClass("active");
+  })
+})
+  //Oculta e esconde menu hamburger
+  $(".burger-wrapper").click(function(){
+      $(".menuHamburger").toggle( "slow", function() {
+  });
+});
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('#headerFlow').addClass('fixed');
+    } else {
+        $('#headerFlow').removeClass('fixed');
+        $(".menuHamburger").trigger('click');
+    }
+});
 });
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({

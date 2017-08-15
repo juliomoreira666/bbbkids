@@ -162,6 +162,26 @@ $(document).ready(function() {
   //Simula abertura da div flutuante
   $('#floatFechar').trigger('click');
 
-  //inserção icone zoom img
+  //Menu flutuante e hamburger
+  $(function(){
+  $(".burger-wrapper").click(function(){
+    $(".show-nav").toggleClass("active");
+  })
+})
+
+//Oculta e esconde menu hamburger
+  $(".burger-wrapper").click(function(){
+      $( ".menuHamburger" ).toggle( "slow", function() {
+  });
+});
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('#headerFlow').addClass('fixed');
+    } else {
+        $('#headerFlow').removeClass('fixed');
+        $(".menuHamburger").trigger('click');
+    }
+});
   
 });
