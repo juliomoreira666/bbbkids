@@ -613,7 +613,7 @@ header .portal-minicart-ref>div {
 #headerFlow .burger-wrapper .show-nav {
   float: left;
   width: 100%;
-  margin: 20px 0px 20px 0px;
+  margin: 18px 0px 0px 0px;
   height: 30px;
   padding: 24px;
   position: relative;
@@ -680,7 +680,7 @@ header .portal-minicart-ref>div {
   width: 100%;
   top: 0px;
   position: fixed;
-  z-index: 9;
+  z-index: 10;
   height: 80px;
   background: #ffffff;
 }
