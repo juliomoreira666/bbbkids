@@ -419,9 +419,13 @@ a {
 #newsletterButtonOK {
 	float: right;
 }
+.newsletter p {
+    font-size: 20px;
+    line-height: 16px;
+}
 .news-news input {
-  width: 39%;
-  margin-left: 30px;
+  width: 39%!important;
+  margin-right: 30px;
   margin-top: 10px;
 }
 
