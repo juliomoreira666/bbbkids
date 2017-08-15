@@ -796,8 +796,8 @@ content: "";
   margin-left:2%;
 }
 #breadTree {
-margin-top: 25px!important;
-margin-bottom: 20px!important;
+margin-top: 25px;
+margin-bottom: 20px;
 text-align: left;
 padding: 15px;
 height: 45px;
