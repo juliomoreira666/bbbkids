@@ -26,11 +26,17 @@
   //  $(this).addClass('open');
   //  $(this).next('ul').slideDown();
   // }
-
 //});
-   $('.search-multiple-navigator>fieldset>h5').prepend('');
+$(document).ready(function() {
+  // Filtros categoria e busca
+  $(".busca .search-single-navigator").css('display','block');
+  $(".categoria .search-single-navigator").css('display','none');
+  $(".departamento .search-single-navigator").css('display','none');
+  $(".search-multiple-navigator").css('display','block');
+  $(".search-multiple-navigator>fieldset>h5").append('<i class="fa fa-plus"></i>');
+  $(".search-multiple-navigator>fieldset>h5").append('');
     $('.search-multiple-navigator>fieldset>div').slideToggle();
-      $('.search-multiple-navigator>fieldset>h5>i').click(function() {
+      $(".search-multiple-navigator>fieldset>h5>i").click(function() {
          if($(this).hasClass('fa-minus')) 
           {   $(this).removeClass('fa-minus');
              $(this).addClass('fa-plus');  
@@ -43,19 +49,22 @@
               $(this).parents('fieldset').find('div').slideToggle();
             }); 
       $(".fa-plus").css("cursor","pointer"); 
-      $(".fa-minus").css("cursor","pointer"); 
+      $(".fa-minus").css("cursor","pointer");
+
 //Menu flutuante e hamburger
   $(function(){
   $(".burger-wrapper").click(function(){
     $(".show-nav").toggleClass("active");
   })
 })
+
   //Oculta e esconde menu hamburger
   $(".burger-wrapper").click(function(){
       $(".menuHamburger").toggle( "slow", function() {
   });
 });
-  //Menu flutuante
+
+//Menu flutuante
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 50) {
         $('#headerFlow').addClass('fixed');
@@ -64,8 +73,6 @@ $(window).bind('scroll', function () {
         $(".menuHamburger").trigger('click');
     }
 });
-});
-$(document).ready(function() {
   $("#owl-demo").owlCarousel({
     pagination: false,
     navigation: true,
