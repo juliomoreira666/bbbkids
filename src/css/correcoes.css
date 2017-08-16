@@ -193,6 +193,9 @@ li.quarto-banho {
     vertical-align: middle;
     display: inline-block;
 }
+.old-price {
+  font-size: 14px;
+}
 .best-price {
    display: block;
    float: left;
