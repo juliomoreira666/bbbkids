@@ -194,6 +194,9 @@ li.quarto-banho {
     vertical-align: middle;
     display: inline-block;
 }
+.categoria .search-multiple-navigator .fa {
+  margin-left: 7px;
+}
 .categoria .prat-categoria .product-name a {
     font-weight: 400;
 }
