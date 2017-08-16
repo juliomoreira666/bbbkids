@@ -193,14 +193,19 @@ li.quarto-banho {
     vertical-align: middle;
     display: inline-block;
 }
-.old-price {
-  font-size: 14px;
+.categoria .prat-categoria .product-name a {
+    font-weight: 400;
 }
-.best-price {
+.categoria .prat-categoria .old-price {
+    font-size: 14px;
+}
+.categoria .prat-categoria .best-price {
+   font-weight: bold;
    display: block;
    float: left;
 }
-.installment {
+.categoria .prat-categoria .installment {
+    font-weight: bold;
    display: block;
    float: left;
    clear: both;

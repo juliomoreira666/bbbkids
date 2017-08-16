@@ -9,7 +9,7 @@ $('.submenu-calcados').hide();
     });
 //Menu Pagina Categoria
 $('.search-single-navigator ul').hide();
-$('.search-single-navigator h3').addClass('toggle-click'); 
+$('.search-single-navigator h3').addClass('toggle-click titulo-categoria'); 
 $('.search-single-navigator h4').addClass('toggle-click');
 $('.search-single-navigator h5').addClass('toggle-click');
 $('.toggle-click').on('click',function(e) {
@@ -26,13 +26,6 @@ $('.toggle-click').on('click',function(e) {
     $(this).next('ul').slideDown();
    }
 
-   function categoriaVazia() {
-      if ($(this).next('ul').find('li').length === 0)
-      {
-        event.preventDefault();
-      }
-   }
-   categoriaVazia();
 });
 //Menu flutuante e hamburger
   $(function(){
