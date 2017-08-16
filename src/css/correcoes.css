@@ -144,3 +144,52 @@ li.quarto-banho {
 .skuespec_Mescla-vinho {
   border: 1px solid #D8BFD8;
 }
+.pages .first {
+    display: none;
+}
+.pages .last {
+  display: none;
+}
+.page-number {
+  padding: 3px 8px;
+  margin: 0px 15px;
+}
+.pgCurrent {
+  padding: 3px 8px;
+  background-color:#79bb86;
+  color:white;
+  border-radius:100%;
+}
+.pager.top {
+  display: none;
+}
+.resultado-busca-filtro {
+  margin-bottom: 25px;
+}
+.sub:nth-child(5) {
+    display: none;  
+}
+.search-single-navigator {
+  margin-left: 0px!important;
+}
+.titulo-departament {
+  color: gray;
+  margin:15px 0px;
+}
+#headerFlow .portal-totalizers-ref {
+  float: right;
+  margin-top: -10px;
+  margin-left: 5px;
+}
+.fixedPedidos .meus-pedidos {
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.fixedPedidos .meus-pedidos span {
+    display: block;
+}
+.nav>li>a>img {
+    vertical-align: middle;
+    display: inline-block;
+}

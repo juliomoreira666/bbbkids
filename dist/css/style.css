@@ -15,11 +15,13 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   font-family: 'Roboto', sans-serif!important;
+  font-weight: normal!important;
 }
 
 body {
   padding-bottom: 0px!important;
   overflow-x: hidden;
+  
 }
 
 li {
@@ -210,15 +212,15 @@ a {
 }
 
 .login-ico:before {
-  background-image: url("http://i.imgur.com/4RDGgCb.png");
+  background-image: url("/arquivos/icomember.png");
 }
 
 .pedidos-ico:before {
-  background-image: url("http://i.imgur.com/lNfbI0k.png");
+  background-image: url("/arquivos/icopedidos.png");
 }
 
 .cart-ico:before {
-  background-image: url("http://i.imgur.com/BVrFw2T.png");
+  background-image: url("/arquivos/icocart.png");
 }
 
 
@@ -233,6 +235,12 @@ a {
 .col-reset {
   padding-left: 0px!important;
   padding-right: 0px!important;
+}
+
+.container-reset {
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+
 }
 
 .finzinho {
@@ -580,6 +588,13 @@ header .portal-totalizers-ref .amount-items span, header .portal-totalizers-ref 
   display: none;
 }
 
+#headerFlow .portal-totalizers-ref .amount-items em:after {
+  content: "ITENS";
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0 0 0 5px;
+}
+
 header .portal-totalizers-ref .amount-items em {
   float: left;
   width: 10px;
@@ -619,6 +634,9 @@ header .portal-minicart-ref>div {
   position: relative;
   cursor: pointer;
   box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -12px;
 }
 #headerFlow .burger-wrapper .show-nav.active {
   height: 30px;
@@ -689,7 +707,30 @@ header .portal-minicart-ref>div {
   display: block!important;
 }
 
-#headerFlow img {
+.fixedPedidos img {
+  width: 40px;
+  height: auto;
+  margin-left: -1px;
+}
+
+.fixedCart img {
+  width: 40px;
+  height: auto;
+  margin-left: -1px;
+}
+
+#headerFlow ul {
+  width: 100%!important;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+#headerFlow ul li a {
+  display: inline-flex;
+  display: block;
+}
+
+#headerFlow .pull-left img {
   margin: 0 auto;
   height: 80px;
 }
@@ -755,8 +796,8 @@ content: "";
   margin-left:2%;
 }
 #breadTree {
-margin-top: 25px!important;
-margin-bottom: 20px!important;
+margin-top: 25px;
+margin-bottom: 20px;
 text-align: left;
 padding: 15px;
 height: 45px;
@@ -854,7 +895,8 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
 
 #selecionaSku .item-dimension-Cor .sku-picked {
   border: none;
-  color: #ffff;
+  color: #000;
+  border: 1px solid;
 }
 
 #selecionaSku  .item-dimension-Tamanho label:hover {

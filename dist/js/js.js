@@ -8,14 +8,31 @@ $('.submenu-calcados').hide();
         $('.submenu-calcados').hide();
     });
 //Menu Pagina Categoria
-$('.search-single-navigator ul').css('height',0).css('overflow','hidden');
+$('.search-single-navigator ul').hide();
 $('.search-single-navigator h3').addClass('toggle-click'); 
 $('.search-single-navigator h4').addClass('toggle-click');
 $('.search-single-navigator h5').addClass('toggle-click');
 $('.toggle-click').on('click',function(e) {
   e.preventDefault();
-   $('.search-single-navigator ul').css('height',0)
-   $(this).next('ul').css('height','auto');
+   $('.search-single-navigator ul').hide('slow');
+   if ($(this).hasClass('open'))
+   {
+    $(this).next('ul').slideUp();
+    $(this).removeClass('open');
+   }
+   else 
+   {
+    $(this).addClass('open');
+    $(this).next('ul').slideDown();
+   }
+
+   function categoriaVazia() {
+      if ($(this).next('ul').find('li').length === 0)
+      {
+        event.preventDefault();
+      }
+   }
+   categoriaVazia();
 });
 //Menu flutuante e hamburger
   $(function(){
