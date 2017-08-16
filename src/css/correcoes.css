@@ -125,8 +125,9 @@ li.quarto-banho {
   width: 39%;
 }
 .newsletter p {
-    font-size: 20px;
-    line-height: 16px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 16px;
 }
 #selecionaSku .item-dimension-Cor label{
   padding: 5px 25px!important;
@@ -221,5 +222,5 @@ li.quarto-banho {
   display: none;
 }
 #intitucional .footer-2 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
