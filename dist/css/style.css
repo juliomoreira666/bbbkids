@@ -377,6 +377,12 @@ a {
 
 
 /*Footer */
+.homeS .footer-2 {
+  border: none;
+}
+.footer-2 {
+  border-top: 3px solid #D3D3D3;
+}
 
 .newsletter-client-name {
   font-size: 14px;
