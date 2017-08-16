@@ -603,8 +603,12 @@ margin: 10px;
   display: none;
 }
 
+.cartSkuActions {
+  display: none;
+}
+
 header .v2-vtexsc-cart {
- overflow-y: auto;
+ overflow-x: hidden;
  width:390px;
  height:290px;
  position:absolute;
@@ -619,6 +623,10 @@ header .v2-vtexsc-cart {
 header .v2-vtexsc-cart * {
  color:#555;
 }
+
+.cartSkuQuantity {
+  display: none;
+}
 header .v2-vtexsc-cart td.cartSkuImage {
  width:80px;
 }
@@ -631,16 +639,45 @@ header .v2-vtexsc-cart td.cartSkuName {
  text-transform:uppercase;
 }
 header .v2-vtexsc-cart td.cartSkuName h4 {
+  font-size: 12px;
+  display: block;
+}
+
+header .v2-vtexsc-cart td.cartSkuName h4 a {
+  color: #5c5c5c!important;          
+  /*! text-align: left; */
+}
+
+.cartSkuName {
+   text-overflow: ellipsis;
+    white-space: nowrap;
+  width: 10px!important;
+}
+
+header .v2-vtexsc-cart td.cartSkuName h4 {
  font-size:14px;
 }
 header .v2-vtexsc-cart td.cartSkuName h4 a {
- color:#005697;
+font-size: 11px;
+margin: 10px;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis ;
+overflow: hidden;
+white-space: nowrap;
+width: 160px;
+height: 100px;
+text-align: center;
 }
 header .v2-vtexsc-cart .vtexsc-productList tbody tr {
  border-bottom:1px solid #e1e6e8;
+ height: 77px;
+}
+
+.cart-ico > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > table:nth-child(1) > thead:nth-child(1) {
+  display: none;
 }
 header .v2-vtexsc-cart td.cartSkuPrice {
- width:180px;
+ width:169px;
  display:table-cell;
  vertical-align:middle;
  float:none;
@@ -663,16 +700,17 @@ header .v2-vtexsc-cart .cartTotal {
  color:#005697;
  font-size:17px;
  float:left;
- margin:-10px 0 0 20px;
+ margin:-19px 0 0 10px;
 }
 header .v2-vtexsc-cart span.vtexsc-text {
  padding:0 0 0 7px;
  color:#005697;
 }
 header .v2-vtexsc-cart a.cartCheckout {
- width:175px;
+ margin-top: 0%;
+ width:50%;
  height:40px;
- background:#8cc63c;
+ background:#78cecd;
  display:inline-block;
  float:right;
  right:30px;
@@ -681,10 +719,19 @@ header .v2-vtexsc-cart a.cartCheckout {
  border-radius:50px;
  text-align:center;
 }
+
+.vtexsc-totalCart {
+  width: 100%;
+  float: right;
+}
 header .v2-vtexsc-cart a.cartCheckout:before {
- content:'finalizar compra';
- line-height:39px;
- font-size:16px;
+ content:'comprar todos';
+ width: 170px;
+  margin: 0 auto;
+  height: auto;
+ line-height:20px;
+ font-size:10px;
+  text-align: center;
  text-transform:uppercase;
  font-weight:700;
  color:#fff;
