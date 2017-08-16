@@ -790,6 +790,10 @@ header .portal-minicart-ref>div {
 }
 
 /* Pagina de produto */
+
+ .prat-home .owl-item {
+  padding-left: 15px;
+}
 #breadTree li a {
 display: block;
 display: inline-table;
@@ -1688,12 +1692,12 @@ cursor: pointer;
 .produto .owl-controls {
     position: absolute;
     z-index: 10;
-    width: 106%;
-    top: 40%;
+    width: 110%;
+    top: 33%;
     height: 0px;
     box-sizing: border-box;
     padding: 0px 30px;
-    left: -3%;
+    left: -4.1%;
 }
 .produto .seta-left {
   background-image: url(/arquivos/arrow.png);
