@@ -215,10 +215,10 @@ li.quarto-banho {
    clear: both;
 }
 .search-single-navigator {
-  display: none!important;
+ 
 }
 .search-multiple-navigator {
-  display: block!important;
+  
 }
 /*INSTITUCIONAL*/
 .menu-quemsomos h5, .menu-quemsomos2 h5 {
@@ -230,8 +230,11 @@ li.quarto-banho {
     border-top-right-radius: 7px;
 }
 .menu-quemsomos li, .menu-quemsomos2 li {
-    padding: 10px 0px;
+    padding: 7px 0px;
     margin-left: 10px;
+}
+#institucional h1 {
+    margin: 6px 0px 21px;
 }
 #institucional .news-news {
   display: none;
