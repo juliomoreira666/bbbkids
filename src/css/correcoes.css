@@ -193,3 +193,12 @@ li.quarto-banho {
     vertical-align: middle;
     display: inline-block;
 }
+.best-price {
+   display: block;
+   float: left;
+}
+.installment {
+   display: block;
+   float: left;
+   clear: both;
+}
