@@ -210,3 +210,13 @@ li.quarto-banho {
    float: left;
    clear: both;
 }
+.search-single-navigator {
+  display: none!important;
+}
+.search-multiple-navigator {
+  display: block!important;
+}
+/*INSTITUCIONAL*/
+#institucional .news-news {
+  display: none;
+}

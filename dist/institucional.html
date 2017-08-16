@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+  <title>
+    Institucional
+  </title>
+  <vtex:metaTags/>
+  <vtex:template id="01-CSS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body id="institucional">
+  <!--  SubTemplate: Header -->
+  <vtex:template id="01-header" />
+  <!-- /SubTemplate: Header -->
+<div class="row row-reset">
+    <div class="container">
+      <div id="breadTree" class="col-md-12">
+        <vtex.cmc:breadCrumb />
+      </div>
+    </div>
+  </div>
+  <div class="row row-reset">
+    <div class="col-md-12 col-reset">
+      <vtex:contentPlaceHolder id="banner-institucional" />
+    </div>
+  </div>
+
+  <div class="row row-reset">
+    <div class="container">
+    <div class="col-md-12">
+       <div class="col-md-2">
+       <vtex:contentPlaceHolder id="menu-institucional" />
+      </div>
+      <div class="col-md-10">
+        <vtex:contentPlaceHolder id="conteudo" />
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <vtex:template id="01-footer" />
+  <!-- Footer -->
+  <vtex:template id="commonScripts" />
+</body>
+</html>

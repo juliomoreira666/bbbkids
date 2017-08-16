@@ -1,32 +1,49 @@
-$(document).ready(function() {
-$('.submenu-calcados').hide();
+//$(document).ready(function() {
+//$('.submenu-calcados').hide();
     
-    $(".btn-calcados, .submenu-calcados").mouseenter(function() {
-        $('.submenu-calcados').show();
-    }) 
-    $(".btn-calcados, .submenu-calcados").mouseleave(function() {
-        $('.submenu-calcados').hide();
-    });
+  //  $(".btn-calcados, .submenu-calcados").mouseenter(function() {
+   //     $('.submenu-calcados').show();
+  //  }) 
+  //  $(".btn-calcados, .submenu-calcados").mouseleave(function() {
+ //       $('.submenu-calcados').hide();
+ //   });
 //Menu Pagina Categoria
-$('.search-single-navigator ul').hide();
-$('.search-single-navigator h3').addClass('toggle-click titulo-categoria'); 
-$('.search-single-navigator h4').addClass('toggle-click');
-$('.search-single-navigator h5').addClass('toggle-click');
-$('.toggle-click').on('click',function(e) {
-  e.preventDefault();
-   $('.search-single-navigator ul').hide('slow');
-   if ($(this).hasClass('open'))
-   {
-    $(this).next('ul').slideUp();
-    $(this).removeClass('open');
-   }
-   else 
-   {
-    $(this).addClass('open');
-    $(this).next('ul').slideDown();
-   }
 
-});
+//$('.search-multiple-navigator ul').hide();
+//$('.search-multiple-navigator h3').addClass('toggle-click'); 
+//$('.search-multiple-navigator h4').addClass('toggle-click');
+//$('.search-multiple-navigator h5').addClass('toggle-click');
+//$('.toggle-click').on('click',function(e) {
+//  e.preventDefault();
+  // $('.search-multiple-navigator ul').hide('slow');
+  // if ($(this).hasClass('open'))
+  // {
+  //  $(this).next('ul').slideUp();
+  //  $(this).removeClass('open');
+  // }
+  // else 
+  // {
+  //  $(this).addClass('open');
+  //  $(this).next('ul').slideDown();
+  // }
+
+//});
+   $('.search-multiple-navigator>fieldset>h5').prepend('');
+    $('.search-multiple-navigator>fieldset>div').slideToggle();
+      $('.search-multiple-navigator>fieldset>h5>i').click(function() {
+         if($(this).hasClass('fa-minus')) 
+          {   $(this).removeClass('fa-minus');
+             $(this).addClass('fa-plus');  
+           } 
+           else 
+           {
+              $(this).removeClass('fa-plus');
+              $(this).addClass('fa-minus');
+            }  
+              $(this).parents('fieldset').find('div').slideToggle();
+            }); 
+      $(".fa-plus").css("cursor","pointer"); 
+      $(".fa-minus").css("cursor","pointer"); 
 //Menu flutuante e hamburger
   $(function(){
   $(".burger-wrapper").click(function(){
