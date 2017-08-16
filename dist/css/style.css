@@ -603,6 +603,99 @@ margin: 10px;
   display: none;
 }
 
+header .v2-vtexsc-cart {
+ overflow-y: auto;
+ width:390px;
+ height:290px;
+ position:absolute;
+ z-index:9999;
+ background:#fff;
+ border-radius:10px;
+ right:0;
+ top:72px;
+ padding:15px;
+ display:none;
+}
+header .v2-vtexsc-cart * {
+ color:#555;
+}
+header .v2-vtexsc-cart td.cartSkuImage {
+ width:80px;
+}
+header .v2-vtexsc-cart td.cartSkuName {
+ width:310px;
+ display:table-cell;
+ vertical-align:middle;
+ float:none;
+ text-align:left;
+ text-transform:uppercase;
+}
+header .v2-vtexsc-cart td.cartSkuName h4 {
+ font-size:14px;
+}
+header .v2-vtexsc-cart td.cartSkuName h4 a {
+ color:#005697;
+}
+header .v2-vtexsc-cart .vtexsc-productList tbody tr {
+ border-bottom:1px solid #e1e6e8;
+}
+header .v2-vtexsc-cart td.cartSkuPrice {
+ width:180px;
+ display:table-cell;
+ vertical-align:middle;
+ float:none;
+ font-weight:700;
+ text-align:center;
+}
+header .v2-vtexsc-cart td.cartSkuPrice div span {
+ color:#005697;
+}
+header .v2-vtexsc-cart td.cartSkuQuantity {
+ /*! display:none; */
+}
+header .v2-vtexsc-cart .cartFooter {
+ float:left;
+ width:100%;
+}
+header .v2-vtexsc-cart .cartTotal {
+ font-weight:500;
+ display:inline-block;
+ color:#005697;
+ font-size:17px;
+ float:left;
+ margin:-10px 0 0 20px;
+}
+header .v2-vtexsc-cart span.vtexsc-text {
+ padding:0 0 0 7px;
+ color:#005697;
+}
+header .v2-vtexsc-cart a.cartCheckout {
+ width:175px;
+ height:40px;
+ background:#8cc63c;
+ display:inline-block;
+ float:right;
+ right:30px;
+ position:relative;
+ top:-20px;
+ border-radius:50px;
+ text-align:center;
+}
+header .v2-vtexsc-cart a.cartCheckout:before {
+ content:'finalizar compra';
+ line-height:39px;
+ font-size:16px;
+ text-transform:uppercase;
+ font-weight:700;
+ color:#fff;
+}
+header .v2-vtexsc-cart .cartFooter.clearfix {
+ position:absolute;
+ bottom:-25px;
+ width:100%;
+ height:55px;
+}
+
 header .portal-totalizers-ref .amount-items span, header .portal-totalizers-ref .amount-kits, header .portal-totalizers-ref .amount-products, header .portal-totalizers-ref .title, header .portal-totalizers-ref .total-cart strong {
   display: none;
 }
@@ -644,7 +737,7 @@ header .portal-totalizers-ref .amount-items em:after {
 }
 
 header .portal-minicart-ref>div {
-  display: none!important
+  display: none;
 }
 
 /*Menu flutuante*/
