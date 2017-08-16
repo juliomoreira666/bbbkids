@@ -1512,21 +1512,29 @@ color: #5b5a5a;
   margin-top: 20px;
 }
 /* CATEGORIA */
-.menu-navegue {
-  margin-left: 110px;
-}
-.search-single-navigator {
-  margin-left: 110px;
-}
-.search-single-navigator .roupas {
-  width: 95%;
-  text-transform: uppercase;
-  border-top: 5px solid #fed000;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  background-color: #FAFAFA;
+.categoria .search-multiple-navigator h5 {  
+  background-color: #F6F6F6;
   text-align: center;
-  padding: 8px 0px;
+  padding: 10px 0px;
+  margin: 0px;
+  border-top: 5px solid #fce376;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.categoria .search-multiple-navigator h3, h4 {
+  display: none;
+}
+.categoria .search-multiple-navigator .bt-refinar {
+  display: none;
+}
+.categoria .search-multiple-navigator fieldset h5 {
+  color: dimgray;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.categoria .search-multiple-navigator fieldset label{
+  display: flex;
+  justify-content: center;
 }
 .Hide {
   width: 95%;

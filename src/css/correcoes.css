@@ -220,6 +220,6 @@ li.quarto-banho {
 #institucional .news-news {
   display: none;
 }
-#intitucional p {
-  color: gray;
+#intitucional .footer-2 {
+  margin-top: 10px;
 }
