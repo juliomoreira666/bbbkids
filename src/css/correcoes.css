@@ -242,3 +242,12 @@ li.quarto-banho {
 .img-inst1 {
   margin-bottom: 50px;
 }
+/*FOOTER*/
+#inst-footer span {
+    margin-top: -2px;
+    margin-right: 7px;
+}
+#inst-footer {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,3 +1,36 @@
+//$(document).ready(function() {
+//$('.submenu-roupas').hide();
+//$('.submenu-calcados').hide();
+//$('.submenu-enxoval').hide();    
+//$('.submenu-quarto-banho').hide();
+//$('.submenu-passeio').hide();
+
+//$(".btn-calcados, .submenu-calcados").mouseenter(function() {
+//  $('.submenu-calcados').show();
+//}) 
+//$(".btn-calcados, .submenu-calcados").mouseleave(function() {
+//  $('.submenu-calcados').hide();
+//});
+
+//Menu Pagina Categoria
+//$('.search-multiple-navigator ul').hide();
+//$('.search-multiple-navigator h3').addClass('toggle-click'); 
+//$('.search-multiple-navigator h4').addClass('toggle-click');
+//$('.search-multiple-navigator h5').addClass('toggle-click');
+//$('.toggle-click').on('click',function(e) {
+//  e.preventDefault();
+  // $('.search-multiple-navigator ul').hide('slow');
+  // if ($(this).hasClass('open'))
+  // {
+  //  $(this).next('ul').slideUp();
+  //  $(this).removeClass('open');
+  // }
+  // else 
+  // {
+  //  $(this).addClass('open');
+  //  $(this).next('ul').slideDown();
+  // }
+//});
 $(document).ready(function() {
      
       $("#owl-demo").owlCarousel({
