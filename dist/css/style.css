@@ -49,6 +49,7 @@ li {
   top: 5px;
   width: 35px;
   border-radius: 0 4px 4px 0;
+  z-index: 101!important;
   padding: 0;
 }
 
@@ -184,6 +185,31 @@ a {
   height: 40px;
   background-color: #ffd000;
   margin: 0 auto;
+}
+
+.ui-autocomplete {
+ background-color:#fff;
+ width:39%!important;
+ position:absolute!important;
+ top:45px!important;
+ padding:40px 10px 10px;
+ -moz-border-radius: 0px;
+-webkit-border-radius: 23px 23px 23px 23px;
+border-radius: 23px 23px 23px 23px; 
+border: 1px solid #cccccc;
+}
+.ui-autocomplete li {
+padding: 10px;
+margin: 10px;
+ cursor:pointer;
+}
+.ui-autocomplete li:nth-child(1) {
+ border-top:0
+}
+.ui-autocomplete li a {
+ font-size:14px;
+ color: #282828;
+ text-transform:uppercase;
 }
 
 .menu-user li a:before {
