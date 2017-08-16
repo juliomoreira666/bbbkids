@@ -29,9 +29,6 @@
 //});
 $(document).ready(function() {
   // Filtros categoria e busca
-  $(".busca .search-single-navigator").css('display','block');
-  $(".categoria .search-single-navigator").css('display','none');
-  $(".departamento .search-single-navigator").css('display','none');
   $(".search-multiple-navigator").css('display','block');
   $(".search-multiple-navigator>fieldset>h5").append('<i class="fa fa-plus"></i>');
   $(".search-multiple-navigator>fieldset>h5").append('');
