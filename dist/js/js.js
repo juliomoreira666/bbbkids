@@ -1,14 +1,18 @@
 //$(document).ready(function() {
+//$('.submenu-roupas').hide();
 //$('.submenu-calcados').hide();
-    
-  //  $(".btn-calcados, .submenu-calcados").mouseenter(function() {
-   //     $('.submenu-calcados').show();
-  //  }) 
-  //  $(".btn-calcados, .submenu-calcados").mouseleave(function() {
- //       $('.submenu-calcados').hide();
- //   });
-//Menu Pagina Categoria
+//$('.submenu-enxoval').hide();    
+//$('.submenu-quarto-banho').hide();
+//$('.submenu-passeio').hide();
 
+//$(".btn-calcados, .submenu-calcados").mouseenter(function() {
+//  $('.submenu-calcados').show();
+//}) 
+//$(".btn-calcados, .submenu-calcados").mouseleave(function() {
+//  $('.submenu-calcados').hide();
+//});
+
+//Menu Pagina Categoria
 //$('.search-multiple-navigator ul').hide();
 //$('.search-multiple-navigator h3').addClass('toggle-click'); 
 //$('.search-multiple-navigator h4').addClass('toggle-click');
@@ -123,13 +127,13 @@ $(window).bind('scroll', function () {
     nav: true,
     responsive: {
       0: {
-        items: 5
+        items: 4
       },
       600: {
-        items: 5
+        items: 4
       },
       1000: {
-        items: 5
+        items: 4
       }
     }
   })
