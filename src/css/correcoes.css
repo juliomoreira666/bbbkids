@@ -194,6 +194,9 @@ li.quarto-banho {
     vertical-align: middle;
     display: inline-block;
 }
+.categoria .search-multiple-navigator .fa {
+  margin-left: 7px;
+}
 .categoria .prat-categoria .product-name a {
     font-weight: 400;
 }
@@ -218,9 +221,21 @@ li.quarto-banho {
   display: block!important;
 }
 /*INSTITUCIONAL*/
+.menu-quemsomos h5, .menu-quemsomos2 h5 {
+    background-color: #F6F6F6;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 5px solid #fce376;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.menu-quemsomos li, .menu-quemsomos2 li {
+    padding: 10px 0px;
+    margin-left: 10px;
+}
 #institucional .news-news {
   display: none;
 }
-#intitucional .footer-2 {
-  margin-top: 20px;
+.img-inst1 {
+  margin-bottom: 50px;
 }
