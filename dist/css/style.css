@@ -1720,7 +1720,7 @@ color: #5b5a5a;
 .categoria .search-multiple-navigator fieldset label{
   display: flex;
   justify-content: center;
-  margin-left: 10px 0px 10px;
+  margin: 10px 0px;
 }
 .categoria .search-multiple-navigator fieldset label input {
   margin-right: 6px;
