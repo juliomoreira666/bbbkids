@@ -150,9 +150,9 @@ $(document).ready(function() {
   })
 })
 
-//Oculta e esconde menu hamburger
-  $(".burger-wrapper").click(function(){
-      $( ".menuHamburger" ).toggle( "slow", function() {
+// Oculta e esconde menu hamburger
+  $(".burger-wrapper").mouseenter(function(){
+      $(".menuHamburger").toggle( "slow", function() {
   });
 });
 

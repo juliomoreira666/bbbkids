@@ -33,7 +33,7 @@ var $showCaseOwl = $(".prat-home > ul");
 })
 
 // Oculta e esconde menu hamburger
-  $(".burger-wrapper").click(function(){
+  $(".burger-wrapper").mouseenter(function(){
       $(".menuHamburger").toggle( "slow", function() {
   });
 });
@@ -49,7 +49,6 @@ $(window).bind('scroll', function () {
 });
 
 // Carosel Home principais e prateleira 
-
     if( $showCaseOwlPrincipal.length ){
       $showCaseOwlPrincipal.find('.helperComplement').remove();
       $showCaseOwlPrincipal.owlCarousel({
