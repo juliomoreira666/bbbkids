@@ -450,15 +450,15 @@ margin: 10px;
   text-transform: uppercase;
 }
 #newsletterButtonOK {
-	width: 170px;
-	float: right;
+  width: 170px;
+  float: right;
 }
 #newsletterClientName {
-	width: 39%;
-	margin-right: 30px;
+  width: 39%;
+  margin-right: 30px;
 }
 #newsletterClientEmail {
-	width: 39%;
+  width: 39%;
 }
 .newsletter p {
     font-size: 20px;
@@ -565,7 +565,7 @@ margin: 10px;
 
 /*Gamb*/
 .carousel-wrap .owl-carousel-2 .owl-wrapper-outer .owl-wrapper .owl-item {
-	width: 180px!important;
+  width: 180px!important;
 }
 .container h2 {
   text-transform: uppercase;
@@ -609,16 +609,27 @@ margin: 10px;
 
 header .v2-vtexsc-cart {
  overflow-x: hidden;
- width:390px;
+ width:380px;
  height:290px;
  position:absolute;
  z-index:9999;
  background:#fff;
- border-radius:10px;
+ border-radius:23px;
  right:0;
- top:72px;
+ top:70px;
  padding:15px;
  display:none;
+}
+header .v2-vtexsc-cart:before {
+content: ' ';
+left: 80%;
+position: absolute;
+float: ;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 20px 10px;
+border-color: transparent transparent black;
 }
 header .v2-vtexsc-cart * {
  color:#555;
@@ -670,7 +681,7 @@ text-align: center;
 }
 header .v2-vtexsc-cart .vtexsc-productList tbody tr {
  border-bottom:1px solid #e1e6e8;
- height: 77px;
+ height: 30px;
 }
 
 .cart-ico > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > table:nth-child(1) > thead:nth-child(1) {
@@ -685,7 +696,7 @@ header .v2-vtexsc-cart td.cartSkuPrice {
  text-align:center;
 }
 header .v2-vtexsc-cart td.cartSkuPrice div span {
- color:#005697;
+ color:#000;
 }
 header .v2-vtexsc-cart td.cartSkuQuantity {
  /*! display:none; */
@@ -695,16 +706,15 @@ header .v2-vtexsc-cart .cartFooter {
  width:100%;
 }
 header .v2-vtexsc-cart .cartTotal {
- font-weight:500;
  display:inline-block;
- color:#005697;
+ color:black;
  font-size:17px;
  float:left;
  margin:-19px 0 0 10px;
 }
 header .v2-vtexsc-cart span.vtexsc-text {
  padding:0 0 0 7px;
- color:#005697;
+ color:#000;
 }
 header .v2-vtexsc-cart a.cartCheckout {
  margin-top: 0%;
@@ -730,12 +740,12 @@ header .v2-vtexsc-cart a.cartCheckout:before {
   margin: 0 auto;
   height: auto;
  line-height:20px;
- font-size:10px;
+ font-size:14px;
   text-align: center;
  text-transform:uppercase;
  font-weight:700;
  color:#fff;
-}
+} 
 header .v2-vtexsc-cart .cartFooter.clearfix {
  position:absolute;
  bottom:-25px;
@@ -1080,10 +1090,12 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
   padding: 22px;
   background-color: #f1f1f1;
   border-radius: 1px;
-  height: 125px;
+  height: 151px;
   /*! margin: 10px; */
 }
-
+.box-price a {
+  text-decoration: none;
+}
 .box-price div {
   padding-right: 0px!important;
 padding-left: 0px!important;
@@ -1116,6 +1128,10 @@ padding: 0px!important;
   text-transform: uppercase;
   border-width: 2px 4px;
   border-radius: 40px;
+}
+
+#compreP .buy-button:hover {
+   background-color: #55b1b1;
 }
 #produtoImagem #image-main {
   border: 1px solid #E1E1E1;
@@ -1533,6 +1549,7 @@ text-align: center;
       border-top: 1px solid #ebebeb;
       border-bottom: 1px solid #ebebeb;
       text-align: justify;
+      margin-top: 50px;
     }
 #description h2 {
 margin-top: 30px;

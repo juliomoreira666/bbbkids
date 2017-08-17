@@ -32,14 +32,6 @@ $(document).ready(function() {
     }
     $btnComprarProduto.html('Comprar <i class="fa fa-shopping-cart"></i>');
 
-    //$btnComprarProduto.click( function(){
-    //var $this = $(this);
-    //var url   = $this.attr('href');
-    //if( url.indexOf('qty=1') > 0 ){
-    //  $this.attr('href', url.replace('qty=1', 'qty='+ parseInt( $('.buy-button-box .box-qtd .qtd').val() ) ) );
-    //}
-    //});
-
     var $recebeQtyForm = $btnComprarProduto.parents('.buy-button-box');
     if ($recebeQtyForm.length) {
       $recebeQtyForm.prepend(
@@ -121,12 +113,19 @@ $(document).ready(function() {
       });
     }
   }
-  
-  // AlteraÃ§Ãµes de textos
+
+  // Alteracoes de textos
   var tamanho = document.querySelector("ul.topic:nth-child(1) > li:nth-child(1)");
   tamanho.textContent = "Escolha o Tamanho:";
+
   var cor = document.querySelector("ul.topic:nth-child(2) > li:nth-child(1)");
   cor.textContent = "Escolha a Cor:";
+
+  var textOK = document.querySelector('#newsletterButtonOK');
+  textOK.value = "CADASTRAR";
+
+  var cartA = document.querySelector('.cartCheckout');
+  cartA.text = "COMPRAR TODOS";
 
   // Abrir e fechar meios de pagamentos
   $("#paymentHidden").click(function() {
