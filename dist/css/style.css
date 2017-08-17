@@ -612,12 +612,13 @@ margin: 10px;
 
 header .v2-vtexsc-cart {
  overflow-x: hidden;
- width:380px;
+ width:370px;
  height:290px;
  position:absolute;
  z-index:9999;
  background:#fff;
  border-radius:23px;
+ box-shadow: 0px 0px 2px 0px grey;
  right:0;
  top:70px;
  padding:15px;
@@ -699,7 +700,8 @@ header .v2-vtexsc-cart td.cartSkuPrice {
  text-align:center;
 }
 header .v2-vtexsc-cart td.cartSkuPrice div span {
- color:#000;
+  font-weight: bold;
+  color:#000;
 }
 header .v2-vtexsc-cart td.cartSkuQuantity {
  /*! display:none; */
@@ -716,7 +718,7 @@ header .v2-vtexsc-cart .cartTotal {
  margin:-19px 0 0 10px;
 }
 header .v2-vtexsc-cart span.vtexsc-text {
- padding:0 0 0 7px;
+ font-weight: bold;
  color:#000;
 }
 header .v2-vtexsc-cart a.cartCheckout {
