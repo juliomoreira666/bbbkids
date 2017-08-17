@@ -3,7 +3,6 @@
 }
 .menu-principal {
     border-radius: 10px !important;
-    padding-left: 50px;
     width: 80%;
     height:30px;
 }
@@ -74,6 +73,15 @@ li.quarto-banho {
     height: 300px;
     background-color: #DCDCDC;
 }
+.conteudo-header:after {
+  width: 100%!important;
+}
+.menu-principal:after {
+  width: 100%!important;
+}
+.menuHamburger .menu li a:hover {
+  color: #ffcc08;
+}
 #half-banners img {
     padding-left: 20px;
 }
@@ -99,6 +107,12 @@ li.quarto-banho {
   position: absolute;
   left: 0;
 } 
+.seta-carousel-3-left {
+  width: 115px!important;
+}
+.seta-carousel-3-right {
+  width: 115px!important;
+}
 .seta-right {
   background-image: url(/arquivos/arrow.png);
   display: inline-block;
@@ -239,8 +253,8 @@ li.quarto-banho {
 #institucional .news-news {
   display: none;
 }
-.img-inst1 {
-  margin-bottom: 50px;
+.img-inst {
+    margin-top: 30px;
 }
 /*FOOTER*/
 #inst-footer span {
