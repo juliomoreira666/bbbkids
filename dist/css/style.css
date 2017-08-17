@@ -609,7 +609,7 @@ margin: 10px;
 .cartSkuActions {
   display: none;
 }
-
+/*CARRINHO HOVER TOPO*/
 header .v2-vtexsc-cart {
  overflow-x: hidden;
  width:370px;
@@ -617,11 +617,9 @@ header .v2-vtexsc-cart {
  position:absolute;
  z-index:9999;
  background:#fff;
- border-radius:23px;
- box-shadow: 0px 0px 2px 0px grey;
+ box-shadow: 0px 0px 2px 0px gray;
  right:0;
  top:70px;
- padding:15px;
  display:none;
 }
 header .v2-vtexsc-cart:before {
@@ -643,7 +641,7 @@ header .v2-vtexsc-cart * {
   display: none;
 }
 header .v2-vtexsc-cart td.cartSkuImage {
- width:80px;
+ width:40px;
 }
 header .v2-vtexsc-cart td.cartSkuName {
  width:310px;
@@ -673,14 +671,15 @@ header .v2-vtexsc-cart td.cartSkuName h4 {
  font-size:14px;
 }
 header .v2-vtexsc-cart td.cartSkuName h4 a {
+border-right: 1px solid #DCDCDC;
 font-size: 11px;
 margin: 10px;
 -o-text-overflow: ellipsis;
 text-overflow: ellipsis ;
 overflow: hidden;
 white-space: nowrap;
-width: 160px;
-height: 100px;
+width: 200px;
+height: 70px;
 text-align: center;
 }
 header .v2-vtexsc-cart .vtexsc-productList tbody tr {
@@ -697,7 +696,8 @@ header .v2-vtexsc-cart td.cartSkuPrice {
  vertical-align:middle;
  float:none;
  font-weight:700;
- text-align:center;
+ text-align:28px;
+ padding-left: 20px;
 }
 header .v2-vtexsc-cart td.cartSkuPrice div span {
   font-weight: bold;
@@ -728,7 +728,7 @@ header .v2-vtexsc-cart a.cartCheckout {
  background:#78cecd;
  display:inline-block;
  float:right;
- right:30px;
+ right:10px;
  position:relative;
  top:-20px;
  border-radius:50px;
@@ -738,6 +738,9 @@ header .v2-vtexsc-cart a.cartCheckout {
 .vtexsc-totalCart {
   width: 100%;
   float: right;
+}
+.portal-minicart-ref a.sku-imagem {
+  width: 50px!important;
 }
 header .v2-vtexsc-cart a.cartCheckout:before {
  content:'comprar todos';
