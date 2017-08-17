@@ -401,7 +401,9 @@ margin: 10px;
 .footer-2 {
   border-top: 3px solid #D3D3D3;
 }
-
+.categoria.departamento .footer-2 {    
+  border-top: none;
+}
 .newsletter-client-name {
   font-size: 14px;
   width: 40%;
