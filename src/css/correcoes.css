@@ -99,6 +99,12 @@ li.quarto-banho {
   position: absolute;
   left: 0;
 } 
+.seta-carousel-3-left {
+  width: 115px!important;
+}
+.seta-carousel-3-right {
+  width: 115px!important;
+}
 .seta-right {
   background-image: url(/arquivos/arrow.png);
   display: inline-block;
