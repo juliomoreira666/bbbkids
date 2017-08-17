@@ -44,7 +44,6 @@ $(window).bind('scroll', function () {
         $('#headerFlow').addClass('fixed');
     } else {
         $('#headerFlow').removeClass('fixed');
-        $(".menuHamburger").trigger('click');
     }
 });
 
