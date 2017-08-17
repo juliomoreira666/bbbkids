@@ -32,9 +32,10 @@ li {
   text-align: right;
 }
 
-.div-atendimento {
+
+ .div-atendimento {
   background-color: #ebebeb;
-  border-radius: 10px 20px 30px 40px;
+  border-bottom-left-radius: 13px;
   padding: 3px;
 }
 
