@@ -74,6 +74,15 @@ li.quarto-banho {
     height: 300px;
     background-color: #DCDCDC;
 }
+.conteudo-header:after {
+  width: 100%!important;
+}
+.menu-principal:after {
+  width: 100%!important;
+}
+.menuHamburger .menu li a:hover {
+  color: #ffcc08;
+}
 #half-banners img {
     padding-left: 20px;
 }
