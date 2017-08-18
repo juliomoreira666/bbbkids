@@ -231,6 +231,9 @@ li.quarto-banho {
   
 }
 /*INSTITUCIONAL*/
+.menu-quemsomos, .menu-quemsomos2 {
+  padding:0px;
+}
 .menu-quemsomos h5, .menu-quemsomos2 h5 {
     background-color: #F6F6F6;
     padding: 10px 0;
