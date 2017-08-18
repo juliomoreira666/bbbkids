@@ -623,15 +623,16 @@ header .v2-vtexsc-cart {
  display:none;
 }
 header .v2-vtexsc-cart:before {
-content: ' ';
-left: 80%;
-position: absolute;
-float: ;
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 10px 20px 10px;
-border-color: transparent transparent black;
+   content: ' ';
+    left: 80%;
+    position: absolute;
+    float: ;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent black;
+ 
 }
 header .v2-vtexsc-cart * {
  color:#555;
@@ -696,7 +697,6 @@ header .v2-vtexsc-cart td.cartSkuPrice {
  vertical-align:middle;
  float:none;
  font-weight:700;
- text-align:28px;
  padding-top: 25px;
  padding-left: 20px;
 }
@@ -740,9 +740,13 @@ header .v2-vtexsc-cart a.cartCheckout {
   width: 100%;
   float: right;
 }
+.portal-minicart-ref:before {
+ 
+}
 .portal-minicart-ref a.sku-imagem {
   width: 50px!important;
 }
+
 header .v2-vtexsc-cart a.cartCheckout:before {
  content:'comprar todos';
  width: 170px;
@@ -756,10 +760,12 @@ header .v2-vtexsc-cart a.cartCheckout:before {
  color:#fff;
 } 
 header .v2-vtexsc-cart .cartFooter.clearfix {
- position:absolute;
- bottom:-25px;
- width:100%;
- height:55px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  background-color: white;
+  height: 91px;
+  border-top: 33px solid white;
 }
 
 header .portal-totalizers-ref .amount-items span, header .portal-totalizers-ref .amount-kits, header .portal-totalizers-ref .amount-products, header .portal-totalizers-ref .title, header .portal-totalizers-ref .total-cart strong {
