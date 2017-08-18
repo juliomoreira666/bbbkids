@@ -1,3 +1,4 @@
+//MENU PRINCIPAL
 $(document).ready(function() {
   $('.btn-roupas, .submenu-roupas').mouseenter(function(){
     $('.submenu-roupas').css('display','flex');
@@ -33,10 +34,7 @@ $(document).ready(function() {
   $('.btn-passeio, .submenu-passeio').mouseleave(function(){
     $('.submenu-passeio').css('display','none');
   });
-
-
 });
-
 //$('#image').find('#image-main')
 // .each(function() {
 //  var src = $(this).attr('src');

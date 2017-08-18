@@ -955,8 +955,10 @@ header .portal-minicart-ref>div {
 }
 
 /* Pagina de produto */
-
- .prat-home .owl-item {
+#product-page .footer-2 {
+    border: none;
+}
+.prat-home .owl-item {
   padding-left: 15px;
 }
 #breadTree li a {
@@ -1645,10 +1647,6 @@ display: none;
  #divFlutuante .zoomWrapper {
   display: none;
  }
-
-header section {
-  
-}
 
 #divFlutuante .buy-button {
     line-height: 2.5em;
