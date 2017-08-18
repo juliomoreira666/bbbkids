@@ -57,20 +57,20 @@ li {
 .menu-user li {
   line-height: 10px;
   display: inline-block;
-  width: 100px;
+  width: 107px;
   padding: 10px;
-  height: 43px;
+  height: 41px;
   vertical-align: middle;
   clear: both;
 }
 
 .menu-user a {
   color: #282828;
-  margin-top: -35px;
+  margin-top: -42px;
   line-height: 20px;
   display: inline-block;
   width: 100px;
-  height: 43px;
+  height: 42px;
   vertical-align: middle;
   /*! clear: both; */
   font-size: 13px!important;
@@ -139,10 +139,6 @@ a {
   position: relative;
   clear: both;
   line-height: 14px;
-}
-
-.menu-user {
-  float: right;
 }
 
 .busca label {
@@ -216,17 +212,17 @@ margin: 10px;
 .menu-user li a:before {
   font-size: 13px;
   clear: both;
-  margin-left: -35px;
-  top: 10px;
+  margin-left: -46px;
+  top: 13px;
   position: relative;
   content: " ";
-  background-size: 35px;
+  background-size: 45px;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 38px;
-  height: 55px;
+  width: 47px;
+  height: 63px;
   overflow: auto;
-  background-position: 0px 20px;
+  background-position: 0px 18px;
 }
 
 .login-ico:before {
