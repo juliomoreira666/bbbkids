@@ -1608,7 +1608,9 @@ display: none;
 .divFlutuanteAberta {
   left: 80%!important;
 }
-
+.divFlutuanteAberta .floatImg {
+  margin-bottom: 7px;
+}
 #divFlutuante {
   z-index: 10;
   border-radius: 2px;
@@ -1621,7 +1623,7 @@ display: none;
   background-color: #F5F5F5;
   height: auto;
   /* margin: 12px; */
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 #divFlutuante #image-main {
@@ -1662,8 +1664,9 @@ display: none;
 }
 
 #divFlutuante .floatName {
-font-size: 18px;
-color: #5b5a5a;
+  font-size: 21px;
+  color: dimgray;
+  padding-bottom: 12px;
 }
 
 #divFlutuante .floatPrice {
@@ -1673,7 +1676,7 @@ color: #5b5a5a;
 #floatFechar {
  text-align:center;
  padding: 9px; 
- left: -12%;
+ left: -16%;
  display: block;
  top: -0.1%;
  background-color: #F5F5F5;
