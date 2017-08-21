@@ -65,7 +65,7 @@ $(document).ready(function() {
         }
       });
     }
-    $btnComprarProduto.html('Comprar <i class="fa fa-shopping-cart"></i>');
+    $btnComprarProduto.html('Comprar  <img src="/arquivos/ico-carrinho.png" id="btn-comprar" width="25" height="25" />');
 
     var $recebeQtyForm = $btnComprarProduto.parents('.buy-button-box');
     if ($recebeQtyForm.length) {
