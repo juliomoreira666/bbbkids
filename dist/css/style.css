@@ -366,6 +366,7 @@ margin: 10px;
   position: absolute;
   width: 106%;
   left: -3.3%;
+  top: 26%;
   font-size: 35px;
 }
 
@@ -374,6 +375,7 @@ margin: 10px;
   position: absolute;
   width: 106%;
   left: -3.3%;
+  top: 26%;
   font-size: 35px;
 }
 
@@ -382,6 +384,7 @@ margin: 10px;
   position: absolute;
   width: 106%;
   left: -3.3%;
+  top: 26%;
   font-size: 35px;
 }
 
@@ -450,7 +453,6 @@ margin: 10px;
 }
 #newsletterButtonOK {
   width: 170px;
-  float: right;
 }
 #newsletterClientName {
   width: 39%;
@@ -1047,7 +1049,7 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
 
 #selecionaSku .item-dimension-Cor label {
     font-weight: normal!important;
-    border-width: 2px 4px;
+    border-width: 2px 2px;
     border-radius: 5px;
     width: 100px;
     height: 32px;
@@ -1060,17 +1062,6 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
     margin-bottom: 9px;
     margin-top: 10px;
     cursor: pointer;
-}
-.skuespec_Rosa {
-  border: 1px solid #eca2a8;
-}
-
-.skuespec_Azul {
-  background-color: #4169E1;
-}
-
- .skuespec_Mescla-vinho {
-  background-color: #D8BFD8;
 }
 
 .item_unavailable {
@@ -1102,7 +1093,7 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
   padding: 22px;
   background-color: #f1f1f1;
   border-radius: 1px;
-  height: 107px;
+  height: 145px;
   /*! margin: 10px; */
 }
 .box-price a {
@@ -1150,12 +1141,12 @@ padding: 0px!important;
   width: 540px;
   height: auto;
   display: inline-block;
-  margin-left: -598px;
+  margin-left: -610px;
   margin-right: -733px;
 }
 
 #produtoImagem .thumbs{
-left: -25px;
+left: -40px;
 top: 0px;
 float: left;
 width: 90px;

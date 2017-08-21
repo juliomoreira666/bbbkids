@@ -128,7 +128,7 @@ li.quarto-banho {
 }
 #newsletterButtonOK {
   width: 170px;
-  float: right;
+  margin-left: 30px;
 }
 #newsletterClientName {
   width: 39%;
@@ -151,12 +151,6 @@ li.quarto-banho {
 }
 #selecionaSku .item-dimension-Cor label{
   width: auto!important;
-}
-.skuespec_Mescla-verde {
-  border: 1px solid #90EE90;
-}
-.skuespec_Mescla-vinho {
-  border: 1px solid #D8BFD8;
 }
 .pages .first {
     display: none;
