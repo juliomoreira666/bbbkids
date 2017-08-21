@@ -21,13 +21,11 @@ li.quarto-banho {
     margin-left: 30px;
     margin-right: 30px;
 }
-#categoria-page .submenu-roupas, .submenu-calcados, .submenu-enxoval, .submenu-quarto-banho, .submenu-passeio {
-
-} 
 .submenu-roupas, .submenu-calcados, .submenu-enxoval, .submenu-quarto-banho, .submenu-passeio {
     display: none;
     width: 100%;
     height: 400px;
+    left: 0;
     background-color: white;
     position: absolute;
     z-index: 999999;
@@ -41,9 +39,13 @@ li.quarto-banho {
     color: dimgray;
     width: 250px;
 }
+.submenu-roupas  ul strong a, .submenu-calcados ul strong a, .submenu-enxoval ul strong a, .submenu-quarto-banho ul strong a, .submenu-passeio ul strong a {
+  font-weight: bold;
+}
 .submenu-roupas li, .submenu-calcados li, .submenu-enxoval li, .submenu-quarto-banho li, .submenu-passeio li {
     padding: 5px 0px;
     color: dimgray;
+    margin-left: 1em;
 }
 .hover-roupas li:hover {
     background-color: dimgray;
@@ -224,12 +226,6 @@ li.quarto-banho {
    display: block;
    float: left;
    clear: both;
-}
-.search-single-navigator {
- 
-}
-.search-multiple-navigator {
-  
 }
 /*INSTITUCIONAL*/
 .menu-quemsomos, .menu-quemsomos2 {
