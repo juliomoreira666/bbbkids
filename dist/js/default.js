@@ -173,7 +173,9 @@ $(document).ready(function() {
   // Div flutuante abrir e fechar
   $('#floatFechar').click(function() {
     $('#divFlutuante').toggleClass('divFlutuanteAberta');
+    $('#floatFechar').toggleClass('floatAberto');
   });
+
   //Simula abertura da div flutuante
   $('#floatFechar').trigger('click');
 
