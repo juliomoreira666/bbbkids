@@ -1740,7 +1740,7 @@ color: #5b5a5a;
   border-bottom: 1px solid #f0f0f0;
 }
 .prat-categoria ul {
-  width:800px;
+  width:900px;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
@@ -1748,7 +1748,7 @@ color: #5b5a5a;
 }
 .prat-categoria li {
   margin-right:20px;
-  width: 225px;
+  width: 250px;
   height: auto;
   
 }
