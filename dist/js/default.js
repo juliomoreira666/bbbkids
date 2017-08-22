@@ -43,7 +43,14 @@
 // height: '545'
 //});
 //});
-$(document).ready(function() {
+      //PERGUNTAS E RESPOSTAS - ATENDIMENTO
+$(document).ready(function(){
+  $(".accordion").click(function(){
+  $(this).find('span').toggleClass('seta-ativa');
+  $(this).toggleClass('accordion-ativo');
+  $(this).next().slideToggle();
+});
+
   var $btnComprarProduto = $('.buy-button.buy-button-ref');
   if ($btnComprarProduto.length) {
     if ($('#divFlutuante').length) {
@@ -177,7 +184,7 @@ $(document).ready(function() {
   });
 
   //Simula abertura da div flutuante
-  $('#floatFechar').trigger('click');
+  //$('#floatFechar').trigger('click');
 
   //Menu flutuante e hamburger
   $(function(){
@@ -198,6 +205,6 @@ $(window).bind('scroll', function () {
     } else {
         $('#headerFlow').removeClass('fixed');
     }
+
 });
-  
 });

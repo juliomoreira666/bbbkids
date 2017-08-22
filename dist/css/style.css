@@ -114,6 +114,7 @@ display: block!important;
 font-size: 30px!important;
 font-weight: 400!important;
 color: #5f5f5f;
+text-transform: uppercase;
 }
 a {
   color: #5f5f5f;
@@ -565,10 +566,8 @@ margin: 10px;
 
 
 /*Gamb*/
-.carousel-wrap .owl-carousel-2 .owl-wrapper-outer .owl-wrapper .owl-item {
-  width: 180px!important;
-}
-.container h2 {
+.homeS .container h2 {
+  margin-left: 35px;
   text-transform: uppercase;
 }
 
@@ -960,9 +959,11 @@ header .portal-minicart-ref>div {
   padding-left: 15px;
 }
 #breadTree li a {
+  margin-top: 7px;
 display: block;
 display: inline-table;
 color: #868686;
+font-size: 12px;
 }
 #breadTree li {
   display: inline-table;
@@ -970,7 +971,7 @@ color: #868686;
   color: #868686;
   text-transform: uppercase;
   margin-left: 0px;
-  text-align: r;
+  font-size: 12px;
 }
 #breadTree li:after {
   color: #868686;
@@ -1007,6 +1008,7 @@ height: 45px;
 }
 
 #nomeP h1 {
+  margin-top: 0px;
   margin-bottom: 5px;
   font-size: 30px!important;
   color: #535353!important;
@@ -1101,7 +1103,7 @@ padding-left: 0px!important;
 }
 
 .box-price p {
-  margin: 0 0 -4px !important;
+  margin: 23px 0 -4px !important;
 }
 .box-price .col-md-6  {
 padding: 0px!important;
@@ -1171,6 +1173,9 @@ text-align: center;
 #produtoBuy div {
 /*! padding-left: 8px; */
 /*! padding-right: 8px; */
+}
+#product-page #shortP {
+    display: none;
 }
 
 .productPrice {
@@ -1666,7 +1671,7 @@ display: none;
 #floatFechar {
  text-align:center;
  padding: 9px; 
- left: -16%;
+ left: -14%;
  display: block;
  top: -0.1%;
  background-color: #F5F5F5;
@@ -1794,6 +1799,7 @@ display: none;
   margin: 5px 0px;
   padding: 0px;
   height: 30px;
+  font-size: 12px;
 }
 .box-banner img {
     width: 100%;
