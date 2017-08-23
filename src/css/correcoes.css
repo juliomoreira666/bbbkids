@@ -193,6 +193,8 @@ li.quarto-banho {
     margin-left: 5px;
     vertical-align: middle;
     display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 .fixedPedidos .meus-pedidos span {
     display: block;
@@ -368,7 +370,8 @@ li.quarto-banho {
 .seta {
     position: absolute;
     left:2%;
+    transform: rotate(180deg);
 }
 .seta-ativa {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }

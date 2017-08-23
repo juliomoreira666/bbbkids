@@ -353,7 +353,9 @@ margin: 10px;
   padding-left: 0px;
   padding-right: 0px;
 }
-
+.carousel3 {
+    left: 3%;
+}
 #carousel-3 .owl-controls {
   padding: 10px;
   position: absolute;
@@ -532,8 +534,12 @@ margin: 10px;
 }
 
 .mob-soc .fa-instagram {
-  background-color: #7A4B31;
+  background-image: url(/arquivos/instagram.jpg);
+  background-size: cover;
   margin-right: 10px;
+}
+.fa-instagram:before {
+  font-size: 47px!important;
 }
 
 .certificados li {
@@ -1088,10 +1094,12 @@ span#spnRatingProdutoTop{margin:0;padding:0;border:0;outline:0;font-size:100%;ve
   box-shadow: 0px 0px 0px 1px grey;
 }
 .box-price {
+  display: flex;
   padding: 22px;
   background-color: #f1f1f1;
   border-radius: 1px;
-  height: 145px;
+  height: auto;
+  min-height: 110px;
   /*! margin: 10px; */
 }
 .box-price a {
@@ -1103,7 +1111,7 @@ padding-left: 0px!important;
 }
 
 .box-price p {
-  margin: 23px 0 -4px !important;
+  margin: 0px 0px 0px !important;
 }
 .box-price .col-md-6  {
 padding: 0px!important;
@@ -1171,6 +1179,7 @@ text-align: center;
 }
 
 #produtoBuy div {
+  float: none;
 /*! padding-left: 8px; */
 /*! padding-right: 8px; */
 }
@@ -1685,9 +1694,9 @@ display: none;
 }
 
 #payementP li {
-  color: #7e7e7e;
+  color: black;
   cursor: pointer;
-  font-size: 19px;
+  font-size: 15px;
   margin-bottom: 8px;
   margin-left: 8px;
 }
@@ -1823,7 +1832,9 @@ display: none;
     font-size: 18px;
     text-decoration: line-through;
  }
-
+#priceP {
+  margin: auto;
+}
 #priceP .valor-de {
   margin-bottom: 10px;
   font-weight: normal!important;
