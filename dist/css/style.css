@@ -2209,6 +2209,26 @@ width: 13.7%;
   width: 100%!important;
   flex-direction: column!important;
 }
+/*PÁGINA PRODUTO*/
+#produtoBuy div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto!important;
+}
+#compreP .buy-button {
+  margin-top: 10px;
+}
+#product-page #payementP {
+  display: none;
+}
+#product-page #descP {
+  display: none;
+}
+
+
+
+
+
 }
 
 
