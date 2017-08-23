@@ -446,7 +446,6 @@ margin: 10px;
   height: 127px;
   background-position: center top;
   background-image: url('http://i.imgur.com/znqXtAg.png');
-  background-repeat: no-repeat;
   clear: both;
   width: 100%;
 }
@@ -473,6 +472,7 @@ margin: 10px;
 }
 
 .footer-2 li {
+  width: 215px;
   list-style: none;
   color: #5b5b5b;
 }
@@ -1171,6 +1171,7 @@ overflow: hidden;
 text-align: center;
 }
 .price-installments, .price-cash {
+  margin-bottom: 0px;
   color: #939393;
 }
 
@@ -1568,6 +1569,7 @@ text-align: center;
 margin-top: 30px;
 font-size: 30px!important;
 font-weight: 400!important;
+text-transform: uppercase;
 color: #5f5f5f!important;
 }
 .productDescription {
@@ -1610,7 +1612,7 @@ display: none;
   left: 80%!important;
 }
 .divFlutuanteAberta .floatImg {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 #divFlutuante {
   z-index: 10;
@@ -1620,11 +1622,11 @@ display: none;
   width: 20%;
   float: right;
   position: fixed;
-  top: 20%;
+  top: 15%;
   background-color: #F5F5F5;
   height: auto;
   /* margin: 12px; */
-  padding: 30px 10px;
+  padding: 20px 10px;
 }
 
 #divFlutuante #image-main {
@@ -2011,3 +2013,205 @@ display: inline-flex;
 height: 26px;
 width: 13.7%;
 }
+/*MOBILE*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container-fluid {
+    display: none;
+  }
+  #headerFlow {
+    display: none;
+  }
+  #headerFlow .portal-totalizers-ref {
+  display:none;
+}
+.fixedPedidos .meus-pedidos {
+    display: none;
+}
+.busca {
+  display:none;
+}
+#headerFlow .pull-left img {
+  width:120px;
+  height:60px;
+  margin: -17px 87px;
+}
+#headerFlow .burger-wrapper .show-nav {
+  float:none;
+  position:none;
+}
+.hamburger {
+  width:80px;
+}
+#half-banners img {
+  padding-left:0px!important;
+  margin-bottom: 13px;
+}
+#carousel-2, #carousel-2, #carousel-3 {
+  margin-left:-8px!important;
+}
+#carousel-3 .owl-item {
+  width: 235px!important;
+}
+#carousel-3 .owl-controls, #carousel-4 .owl-controls, #carousel-5 .owl-controls, #carousel-6 .owl-controls {
+  display: none!important;
+}
+.newsletter p {
+  font-size: 18px!important;
+}
+#newsletterClientName {
+  width: 100%!important;
+}
+#newsletterClientEmail {
+  width: 100%!important;
+}
+.news-news {
+  padding: 15px 0px!important;
+  height: 240px!important;
+}
+#newsletterButtonOK {
+  float: right;
+}
+#carousel-2 {
+  display: none;
+}
+.owl-carousel {
+  padding-left: 0px;
+}
+.certificados {
+  display: flex;
+  padding:0px;
+}
+.quemfaz {
+  padding: 0px;
+  margin: 15px 0px;
+}
+.quemfaz li {
+  margin-bottom: 20px 0px;
+}
+.finzinho div {
+  text-align: center!important;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.finzinho .container {
+  border: none!important;
+}
+.text-copyright {
+  margin-top: 25px;
+  text-align: center;
+}
+.vtex-v {
+  margin-top: 20px;
+}
+.sanders-meDeumaChance {
+  margin-top: 20px;
+}
+.div-inst-footer {
+  margin-top: 20px;
+  width: 50%!important;
+  float: left;
+}
+.div-info-footer {
+  margin-top: 20px;
+  width: 50%!important;
+  padding:0px;
+  float: left;
+}
+.div-aten-footer {
+  clear: both;
+  padding-top: 17px;
+}
+.homeS .footer-2 {
+  padding:0px!important;
+}
+.footer-2 {
+  padding: 0px!important;
+  margin-top: 20px!important;
+}
+.footer-2 .container {
+    padding: 0px;
+}
+.social-mob {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.mob-soc {
+  text-align: center;
+  padding:0px!important;
+}
+.mob-soc a {
+  font-size: 14px;
+}
+.copyright {
+  border-top: 1px solid #DCDCDC;
+}
+.div-fa-footer {
+  padding:0px;
+  width: 100%!important;
+}
+.li-politica {
+  width: 135px!important;
+}
+.fa-facebook, .fa-youtube, .fa-twitter, .fa-instagram {
+  width: 65px!important;
+  height: 65px!important;
+}
+.fa-facebook, .fa-youtube, .fa-twitter, .fa-instagram {
+  margin-right: 5px!important;
+}
+/*PÁGINA INSTITUCIONAL QUEM SOMOS*/
+.menu-quemsomos, .menu-quemsomos2 {
+  display: none;
+}
+.quem-somos .conteudo-inst {
+  padding: 0px!important;
+}
+.quem-somos .banner-inst {
+  display: none;
+}
+.img-inst3, .img-inst1 {
+  display: none;
+}
+/*PÁGINA INSTITUCIONAL ATENDIMENTO*/
+.conteudo-geral {
+  padding: 0px!important;
+}
+.panel {
+  margin:0px!important;
+}
+.atendimento-email {
+  padding: 10px 12px!important;
+  width: 100%!important;
+}
+#institucional form textarea {
+  width: 100%!important;
+}
+.atendimento-telefone {
+  padding: 10px 12px!important;
+  width: 100%!important;
+}
+.btn-voltar {
+  font-size: 13px;
+}
+#btn-enviar {
+  font-size: 12px;
+  padding: 10px 13px!important;
+}
+/*PÁGINA DEPARTAMENTO*/
+.search-multiple-navigator {
+  display: none!important;
+}
+.departamento .sub {
+  display: none!important;
+}
+.prat-categoria ul {
+  padding: 0px!important;
+  width: 100%!important;
+  flex-direction: column!important;
+}
+}
+
+
+
+
+
