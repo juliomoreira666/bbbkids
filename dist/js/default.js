@@ -190,11 +190,11 @@ $(document).ready(function(){
   $(function(){
   $(".burger-wrapper").click(function(){
     $(".show-nav").toggleClass("active");
-  })
-})
+ });
+});
 
-// Oculta e esconde menu hamburger
-  $(".burger-wrapper").mouseenter(function(){
+//Oculta e esconde menu hamburger
+$(".burger-wrapper").mouseenter(function(){
       $(".menuHamburger").toggle( "slow", function() {
   });
 });
@@ -205,6 +205,12 @@ $(window).bind('scroll', function () {
     } else {
         $('#headerFlow').removeClass('fixed');
     }
+});
+var $widthMobile = $(document).width();
 
+if($widthMobile == 375) {
+ alert();
+
+}
 });
-});
+ 

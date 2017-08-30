@@ -44,7 +44,7 @@ var $showCaseOwl = $(".prat-home > ul");
   $(".search-multiple-navigator").css('display','block');
   $(".search-multiple-navigator>fieldset>h5").append('<i class="fa fa-plus"></i>');
   $(".search-multiple-navigator>fieldset>h5").append('');
-    $('.search-multiple-navigator>fieldset>div').slideToggle();
+    $('.search-multiple-navigator>fieldset>div').slideToggle();  
       $(".search-multiple-navigator>fieldset>h5>i").click(function() {
          if($(this).hasClass('fa-minus')) 
           {   $(this).removeClass('fa-minus');
@@ -59,19 +59,21 @@ var $showCaseOwl = $(".prat-home > ul");
             }); 
       $(".fa-plus").css("cursor","pointer"); 
       $(".fa-minus").css("cursor","pointer");
-
-// Menu flutuante e hamburger
-  $(function(){
-  $(".burger-wrapper").click(function(){
-    $(".show-nav").toggleClass("active");
-  })
-})
+  $(".search-multiple-navigator>fieldset>h5>i").trigger('click');
+  /*CHECKBOX*/
+  $('.multi-search-checkbox').on('change', function() {
+ var $inputSearch = $(this).attr('rel');
+  var $urlAtual = window.location; location.replace($urlAtual + '?' + $inputSearch);
+   console.log($urlAtual); console.log($inputSearch);});
+ //Menu flutuante e hamburger
+  //$(function(){
+  //$(".burger-wrapper").click(function(){
+    //$(".show-nav").toggleClass("active");
+  //})
+//});
 
 // Oculta e esconde menu hamburger
-  $(".burger-wrapper").mouseenter(function(){
-      $(".menuHamburger").toggle( "slow", function() {
-  });
-});
+
 
 // Menu flutuante
 $(window).bind('scroll', function () {
@@ -128,6 +130,7 @@ $(window).bind('scroll', function () {
           itemsMobile     : [479,1],
           navigation      : true,
           navigationText    : ['<a class="seta-carousel-3-left"></a>','<a class="seta-carousel-3-right"></a>']
+          
       });
     } 
 
@@ -146,6 +149,21 @@ $(window).bind('scroll', function () {
           navigationText    : [ '<a class="seta-prat-home-left"></a>','<a class="seta-prat-home-right"></a>']
       });
     }    
+
+var $widthMobile = $(document).width();
+
+if($widthMobile == 375) { 
+
+ $(".burger-wrapper").click(function(){
+      $(".menuHamburger").toggle();
+});
+} else {
+    $(".burger-wrapper").mouseenter(function(){
+      $(".menuHamburger").toggle( "slow", function() {
+  });
+});
+}
+
 });
 
 
