@@ -79,8 +79,10 @@ var $showCaseOwl = $(".prat-home > ul");
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 50) {
         $('#headerFlow').addClass('fixed');
+        $('header .v2-vtexsc-cart').css('top','80px').css('right','130px').css('position','fixed');
     } else {
         $('#headerFlow').removeClass('fixed');
+        $('header .v2-vtexsc-cart').css('top','80px').css('right','-20px').css('position','absolute');
     }
 });
 
@@ -166,5 +168,11 @@ if($widthMobile == 375) {
 
 });
 
-
-
+$(window).load(function() {
+  // $('.helperComplement').remove();
+  //SCROLLBAR CARRINHO FLUTUANTE
+  $(".vtexsc-wrap ").mCustomScrollbar({
+    scrollButtons:{enable:true},
+    theme:"dark-thick"
+  });
+});

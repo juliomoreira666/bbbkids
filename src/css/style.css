@@ -1645,3 +1645,12 @@ display: inline-flex;
 height: 26px;
 width: 13.7%;
 }
+
+header .v2-vtexsc-cart {
+  padding-bottom: 60px;
+}
+
+header .v2-vtexsc-cart .vtexsc-center{
+  height: 100%;
+  overflow: scroll;
+}
